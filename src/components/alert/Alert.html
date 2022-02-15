@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/components/component.css">
+    <title>Airave UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-name">
+                <a href="/index.html">
+                    <span class="white-text">Airave</span>
+                    <span class="logo">UI</span>
+                </a>
+            </div>
+            <nav>                    
+                <ul class="nav-links">
+                    <a href="https://github.com/aiman-ansari"><li><i class="fa fa-github"></i></li></a>               
+                    <a href="https://www.linkedin.com/in/aiman-ansari-0054a01a7/"><li><i class="fa fa-linkedin"></i></li></a>
+                    <span class="toggle-theme">
+                        <li><i class="fa fa-moon-o" ></i></li>
+                    </span>   
+                </ul>
+            </nav>
+        </div>
+        <div class="left-sidebar pd-1">
+            <ul>
+                <li><h4>Getting started</h4></li>
+                <li>Installation</li>
+                <a href="/src/components/colors/color.html"><li>Colors</li></a>
+                <a href="/src/components/Text-utilities/Text-utilities.html"><li>Text Utilities</li></a>
+                <li><h4>Components</h4></li>
+                <li><a href="/src/components/alert/Alert.html" class="active">Alert</a></li>
+                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
+                <li><a href="/src/components/Badge/Badge.html">Badge</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
+                <li><a href="/src/components/Button/Button.html">Button</a></li>
+                <li><a href="/src/components/cards/card.html">Card</a></li>
+                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
+                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
+                <li><a href="/src/components/list/list.html">Lists</a></li>
+                <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
+            </ul>
+        </div>
+    <main>
+        <div class="container-section">
+            <h2>Alert</h2>
+            <p class="mt-1 mb-1 bold-text">Alert is use to give feedback messages to user actions.</p> 
+            <hr>
+            <section>
+                <div id="Simple-alert">
+                    <h2 class="mt-1">Simple Alert</h2>
+                        <p class="mt-1">Use any one classes by simply using there name. (eg. <span class="purple-text">.alert-danger)</span></p>             
+                        <div class="demo-container flex-align-center gap-1 mb-1 flex-wrap">
+
+                            <div class="alert alert-danger">
+                                <p class="bold-text">Error </p>This is an error alert!
+                            </div>
+                            <div class="alert alert-success">
+                                <p class="bold-text">Success</p>This is success alert!
+                            </div>
+                            <div class="alert alert-info">
+                                <p class="bold-text">Info</p>This is info alert!
+                            </div>
+                            <div class="alert alert-warning">
+                                <p class="bold-text">Warning</p>This is warning alert!
+                            </div>
+                        </div>
+                </div>
+            </div>
+                <pre>
+                    <code class="language-html">
+&lt;div class=&quot;alert alert-danger&quot;&gt;
+    &lt;p class=&quot;bold-text&quot;&gt;Error &lt;/p&gt;This is an error alert!
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-success&quot;&gt;
+    &lt;p class=&quot;bold-text&quot;&gt;Success&lt;/p&gt;This is success alert!
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;p class=&quot;bold-text&quot;&gt;Info&lt;/p&gt;This is info alert!
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+    &lt;p class=&quot;bold-text&quot;&gt;Warning&lt;/p&gt;This is warning alert!
+&lt;/div&gt;
+                    </code>
+                </pre>
+            
+                <div id="alert-with-icon">
+                    <h2>Alert with icons</h2>
+                    <div class="demo-container flex-col-center mt-1">
+                        <div class="alert alert-danger">
+                            <i class="fa fa-exclamation-circle"></i><p class="alert-text">This is an error alert!</p>
+                        </div>
+                        <div class="alert alert-success">
+                            <i class="fa fa-check-circle"></i><p class="alert-text">This is success alert!</p>
+                        </div>
+                        <div class="alert alert-info">
+                            <i class="fa fa-check-circle"></i><p class="alert-text">This is info alert!</p>
+                        </div>
+                        <div class="alert alert-warning">
+                            <i class="fa fa-exclamation-triangle"></i><p class="alert-text">This is warning alert!</p>
+                        </div>
+                    </div>
+                    <pre>
+                        <code class="language-html">
+&lt;div class=&quot;alert alert-danger&quot;&gt;
+    &lt;i class=&quot;fa fa-exclamation-circle&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;alert-text&quot;&gt;This is an error alert!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-success&quot;&gt;
+    &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;alert-text&quot;&gt;This is success alert!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;alert-text&quot;&gt;This is info alert!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+    &lt;i class=&quot;fa fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;alert-text&quot;&gt;This is warning alert!&lt;/p&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                    <div id="border">
+                        <h2>Border</h2>
+                        <div class="demo-container flex-col-center mt-1">
+                            <div class="alert alert-danger-border">
+                                <i class="fa fa-exclamation-circle"></i><p class="alert-text">This is an error alert!</p>
+                            </div>
+                            <div class="alert alert-success-border">
+                                <i class="fa fa-check-circle"></i><p class="alert-text">This is success alert!</p>
+                            </div> 
+                            <div class="alert alert-info-border">
+                                <i class="fa fa-check-circle"></i><p class="alert-text">This is info alert!</p>
+                            </div>
+                            <div class="alert alert-warning-border">
+                                <i class="fa fa-exclamation-triangle"></i><p class="alert-text">This is warning alert!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <pre>
+                        <code class="language-html iframe-container">
+&lt;div class=&quot;alert alert-danger-border&quot;&gt;
+    &lt;i class=&quot;fa fa-exclamation-circle&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;alert-text&quot;&gt;This is an error alert!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-success-border&quot;&gt;
+    &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;bold-text&quot;&gt;Success&lt;/p&gt;This is success alert!
+&lt;/div&gt; 
+&lt;div class=&quot;alert alert-info-border&quot;&gt;
+    &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;bold-text&quot;&gt;Info&lt;/p&gt;This is info alert!
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning-border&quot;&gt;
+    &lt;i class=&quot;fa fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;bold-text&quot;&gt;Warning&lt;/p&gt;This is warning alert!
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                    <div id="dismissing-alert">
+                        <h2>Dismissing Alert</h2>
+                            <p class="mt-1 mb-1">Using the alert javascript plugin, It's possible to dismiss any alert inline.</p>
+                               <div class="demo-container flex-col-center mt-1">
+                                    <div class="alert alert-danger" id="alert-block" >
+                                        <div class="flex-grow">
+                                            <i class="fa fa-exclamation-circle" ></i><p class="bold-text">Error</p>This is an error alert!
+                                        </div>
+                                        <i class="fa fa-times-circle flex-row-reverse " id="close"></i>
+                                    </div>
+                                    <div class="alert alert-success">
+                                        <div class="flex-grow">
+                                            <i class="fa fa-check-circle"></i><p class="bold-text">Success</p>This is success alert!
+                                        </div>
+                                        <i class="fa fa-times-circle"></i>
+                                    </div>
+                                    <div class="alert alert-info">
+                                        <div class="flex-grow">
+                                            <i class="fa fa-check-circle"></i><p class="bold-text">Info</p>This is info alert!
+                                        </div>
+                                        <i class="fa fa-times-circle"></i>
+                                    </div>
+                                    <div class="alert alert-warning">
+                                        <div class="flex-grow">
+                                        <i class="fa fa-exclamation-triangle"></i><p class="bold-text">Warning</p>This is warning alert!
+                                        </div>
+                                        <i class="fa fa-times-circle"></i>
+                                    </div>
+                                </div>
+                        </div>
+                        <pre>
+                            <code class="language-html">
+&lt;div class=&quot;alert alert-danger&quot; id=&quot;alert-block&quot; &gt;
+    &lt;div class=&quot;flex-grow&quot;&gt;
+        &lt;i class=&quot;fa fa-exclamation-circle&quot; &gt;&lt;/i&gt;
+        &lt;p class=&quot;bold-text&quot;&gt;Error&lt;/p&gt;This is an error alert!
+    &lt;/div&gt;
+    &lt;i class=&quot;fa fa-times-circle flex-row-reverse&quot; id=&quot;close&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <pre>
+                            <code class="language-javascript">
+            //javascript
+const cancel=document.querySelector('#close');
+const alertDiv = document.querySelector('#alert-block')
+cancel.addEventListener('click',()=>{
+alertDiv.style.display="none"
+})  
+                            </code>
+                        </pre>
+                </section>   
+            </div>             
+        </main>
+        <div class="right-sidebar">
+            <ul>
+                <li><h4>On this page</h4></li>
+                <li><a href="#Simple-alert">Simple Alert</a></li>
+                <li><a href="#alert-with-icon">Alert with Icon</a></li>
+                <li><a href="#border">Border</a></li>
+                <li><a href="#dismissing-alert">Dismissing Alert</a></li>
+            </ul>
+        </div>
+        </div>
+        
+        <script src="/src/index.js"></script>
+    
+        <script src="/src/prism/prism.js"></script>
+        <script src="/src/components/alert/alert.js"></script>
+    
+    </body>
+    </html>
+    
