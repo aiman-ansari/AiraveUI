@@ -1,0 +1,32 @@
+:root{
+    --primary-color:#2e916b;
+    --secondary-color:#fa5456;
+    --accent-color:#eb2e08;
+    --tertiary-color:#fdd219;
+    --theme-yellow:#fdd219;
+    --light-color:rgb(255, 244, 244);
+    --dark-color:rgb(36, 36, 36);
+    --badge-online:rgba(0, 189, 0, 0.842);
+    --badge-offline:rgb(101, 102, 101);
+    --badge-idle:rgba(255, 181, 21, 0.87);
+    --badge-red:tomato;
+    --white:rgb(248, 248, 248);
+    --purple-color:#43324b;
+    --danger-color:#ffd1d4;
+    --danger-text-color:red;
+    --success-color:#bdffcc;
+    --success-btn-color:rgb(0, 255, 0);
+    --success-text-color:rgb(4, 134, 4);
+    --info-color:#d1ecf1;
+    --info-text-color:rgb(3, 3, 172);
+    --warning-color:#fae29f;
+    --warning-text-color:orange;
+    --btn-hover-primary:rgb(58, 116, 116);
+    --btn-hover-secondary:rgb(253, 237, 4);
+    --btn-hover-tertiary:rgb(255, 24, 63);
+    --btn-hover-accent:orangered;
+    --btn-gradient-pink-1:#eb3349;
+    --btn-gradient-pink-2:#ff512f;
+    --btn-gradient-blue-2:#185a9d;
+    --btn-gradient-blue-1:#43cea2;
+}
