@@ -1,0 +1,23 @@
+:root{
+    --black:rgb(26, 25, 25);
+    --demo-container:#fffefb;
+    --demo-container-shadow:rgba(219,219,219,1);
+}
+.bold-text{
+    font-weight: bold;
+}
+
+.purple-text{
+    color:var(--secondary-color);
+    font-weight:bold;
+}
+.demo-container{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    background-color: var(--demo-container);
+    box-shadow: 2px 4px 16px -1px var(--demo-container-shadow) ;
+}
+.container-section{
+    padding:1rem 1rem;
+  
+}
