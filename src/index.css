@@ -11,6 +11,7 @@
     --dark-mode-active:rgb(94, 51, 84);
     --dark-mode-sidebar:rgb(32, 32, 32);
     --dark-mode-container:rgb(36, 36, 36);
+    --sidebar:rgb(231, 231, 231);
 }
 
 body{
@@ -83,7 +84,7 @@ a{
     color:var(--dark-gray-text);
 }
 .left-sidebar li:hover{
-    background-color: rgb(231, 231, 231);
+    background-color: var(--sidebar);
 }
 .left-sidebar li .active{
     color:var(--purple-color);
