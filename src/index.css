@@ -55,9 +55,6 @@ nav ul li ,.logo-name{
     padding:0px 10px;
     font-size:1.2rem;
 }
-#menu-icon{
-    display: none;
-}
 
 .logo{
     color:var(--secondary-color);
@@ -68,6 +65,7 @@ nav ul li ,.logo-name{
     display:flex;
     font-size:1.2rem;
     font-weight:bold;
+    color: var(--white);
 }
 .logo-name p{
     padding:0px 10px;
@@ -110,6 +108,8 @@ li{
 }
 .menu-icon{
     display: none;
+    padding: 0rem 1rem;
+    color:var(--white);
 }
 main{
     grid-area:main;
@@ -178,9 +178,10 @@ footer{
     main{
         width: 100vw;
         margin: 0;
+        padding: 0rem;
     }
     .navbar{
-        padding:0.5rem 0rem;
+        padding:1rem 1rem;
 
     }
 }
