@@ -1,0 +1,17 @@
+.list{
+    display: block;
+    width: max-content;
+}
+
+.list ul li{
+    background-color: rgb(253, 247, 247);
+    padding: 8px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-description{
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+}
