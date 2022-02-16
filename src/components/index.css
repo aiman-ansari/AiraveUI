@@ -16,8 +16,17 @@
     margin-bottom:1rem;
     background-color: var(--demo-container);
     box-shadow: 2px 4px 16px -1px var(--demo-container-shadow) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 .container-section{
     padding:1rem 1rem;
   
+}
+p{
+    color: var(--dark-gray-text);
+    font-weight: 500;
 }

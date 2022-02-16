@@ -11,6 +11,7 @@
     --dark-mode-active:rgb(94, 51, 84);
     --dark-mode-sidebar:rgb(32, 32, 32);
     --dark-mode-container:rgb(36, 36, 36);
+    --sidebar:rgb(231, 231, 231);
 }
 
 body{
@@ -54,9 +55,6 @@ nav ul li ,.logo-name{
     padding:0px 10px;
     font-size:1.2rem;
 }
-#menu-icon{
-    display: none;
-}
 
 .logo{
     color:var(--secondary-color);
@@ -67,6 +65,7 @@ nav ul li ,.logo-name{
     display:flex;
     font-size:1.2rem;
     font-weight:bold;
+    color: var(--white);
 }
 .logo-name p{
     padding:0px 10px;
@@ -83,7 +82,7 @@ a{
     color:var(--dark-gray-text);
 }
 .left-sidebar li:hover{
-    background-color: rgb(231, 231, 231);
+    background-color: var(--sidebar);
 }
 .left-sidebar li .active{
     color:var(--purple-color);
@@ -109,6 +108,8 @@ li{
 }
 .menu-icon{
     display: none;
+    padding: 0rem 1rem;
+    color:var(--white);
 }
 main{
     grid-area:main;
@@ -177,9 +178,10 @@ footer{
     main{
         width: 100vw;
         margin: 0;
+        padding: 0rem;
     }
     .navbar{
-        padding:0.5rem 0rem;
+        padding:1rem 1rem;
 
     }
 }

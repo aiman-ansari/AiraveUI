@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/components/component.css">
+    <title>Airave UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>     
+            <div class="logo-name">
+                <a href="/index.html">
+                    <span class="white-color-text">Airave</span>
+                    <span class="logo">UI</span>
+                </a>
+            </div>
+            <nav>                    
+                <ul class="nav-links">
+                    <a href="https://github.com/aiman-ansari"><li><i class="fa fa-github"></i></li></a>               
+                    <a href="https://www.linkedin.com/in/aiman-ansari-0054a01a7/"><li><i class="fa fa-linkedin"></i></li></a>
+                    <span class="toggle-theme">
+                        <li><i class="fa fa-moon-o" ></i></li>
+                    </span>   
+                </ul>
+            </nav>
+        </div>
+        <div class="left-sidebar pd-1">
+            <ul>
+                <li><h4>Getting started</h4></li>
+                <li>Installation</li>
+                <a href="/src/components/colors/color.html"><li>Colors</li></a>
+                <a href="/src/components/Text-utilities/Text-utilities.html"><li>Text Utilities</li></a>
+                <li><h4>Components</h4></li>
+                <li><a href="/src/components/alert/Alert.html">Alert</a></li>
+                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
+                <li><a href="/src/components/Badge/Badge.html" class="active">Badge</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
+                <li><a href="/src/components/Button/Button.html">Button</a></li>
+                <li><a href="/src/components/cards/card.html">Card</a></li>
+                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
+                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
+                <li><a href="/src/components/list/list.html">Lists</a></li>
+                <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
+            </ul>
+        </div>
+    <main>
+        <div class="container-section">
+            <h2>Badge</h2>
+            <p class="mt-1 mb-1 bold-text">Avatar is used to show user's profile picture on profile page and navigation.</p> 
+            <hr>    
+            <div id="badge-on-avatar">
+                    <h2 class="mt-1">Badge on Avatar</h2>
+                        <p class="mt-1">This badge is used to show user status online. To use this you just need to include class <span class="purple-text">badge-wrapper</span></span>
+                        and include <span class="purple-text">bg-xl,</span><span class="purple-text">bg-lg,</span><span class="purple-text">bg-md,</span><span class="purple-text"> bg-sm,</span><span class="purple-text"> bg-xsm</span></p>
+                        <p>(eg. <span class="purple-text">class="avatar avatar-xl"</span>)</p>
+                        <div class="demo-container gap-2">
+                            <div class="badge-wrapper">
+                                <img class="avatar avatar-xl" src="/src/assest/avatar-1.jpg"/>
+                                <span class="badge bg-xl"></span>
+                            </div>    
+                            <div class="badge-wrapper">
+                                <img class="avatar avatar-lg" src="/src/assest/avatar-1.jpg"/>
+                                <span class="badge bg-lg"></span>
+                            </div> 
+                            <div class="badge-wrapper">
+                                <img class="avatar avatar-md" src="/src/assest/avatar-1.jpg"/>
+                                <span class="badge bg-md"></span>
+                            </div> 
+                            <div class="badge-wrapper">
+                                <img class="avatar avatar-sm" src="/src/assest/avatar-1.jpg"/>
+                                <span class="badge bg-sm"></span>
+                            </div>  
+                            <div class="badge-wrapper">
+                                <img class="avatar avatar-xsm" src="/src/assest/avatar-1.jpg"/>
+                                <span class="badge bg-xsm"></span>
+                            </div>  
+                        </div> 
+                        <pre>
+                            <code class="language-html">
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;img class=&quot;avatar avatar-xl&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+    &lt;span class=&quot;badge bg-xl&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;    
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;img class=&quot;avatar avatar-lg&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+    &lt;span class=&quot;badge bg-lg&quot;&gt;&lt;/span&gt;
+&lt;/div&gt; 
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;img class=&quot;avatar avatar-md&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+    &lt;span class=&quot;badge bg-md&quot;&gt;&lt;/span&gt;
+&lt;/div&gt; 
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;img class=&quot;avatar avatar-sm&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+    &lt;span class=&quot;badge bg-sm&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;  
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;img class=&quot;avatar avatar-xsm&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+    &lt;span class=&quot;badge bg-xsm&quot;&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+        </code>
+</pre>
+                </div>
+                <div id="different-position">
+                    <h2>Badge on Different position</h2>
+                    <p class="mt-1">You can also use badge at different position.To use this you just need to include badge position <span class="purple-text">badge-top-left</span>, <span class="purple-text">badge-bottom-left</span>, <span class="purple-text">badge-bottom-right</span>, <span class="purple-text">badge-top-right</span></span>
+                    <p>(eg. <span class="purple-text">class="avatar avatar-sm badge-top-left"</span>)</p>
+                        <div class="demo-container gap-1">
+                            <div class="badge-wrapper">
+                                <img class="avatar avatar-sm" src="/src/assest/avatar-1.jpg"/>
+                                <span class="badge bg-sm badge-bottom-right online"></span>
+                            </div>    
+                            <div class="badge-wrapper">
+                                <img class="avatar avatar-sm" src="/src/assest/avatar-1.jpg"/>
+                                <span class="badge bg-sm badge-top-right offline"></span>
+                            </div> 
+                            <div class="badge-wrapper">
+                                <img class="avatar avatar-sm" src="/src/assest/avatar-1.jpg"/>
+                                <span class="badge bg-sm badge-bottom-left idle"></span>
+                            </div> 
+                            <div class="badge-wrapper">
+                                <img class="avatar avatar-sm" src="/src/assest/avatar-1.jpg"/>
+                                <span class="badge bg-sm badge-top-left red"></span>
+                            </div>  
+                    </div>
+<pre>
+    <code class="language-html">
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;img class=&quot;avatar avatar-sm&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+    &lt;span class=&quot;badge bg-sm badge-bottom-right online&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;    
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;img class=&quot;avatar avatar-sm&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+    &lt;span class=&quot;badge bg-sm badge-top-right offline&quot;&gt;&lt;/span&gt;
+&lt;/div&gt; 
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;img class=&quot;avatar avatar-sm&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+    &lt;span class=&quot;badge bg-sm badge-bottom-left idle&quot;&gt;&lt;/span&gt;
+&lt;/div&gt; 
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;img class=&quot;avatar avatar-sm&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+    &lt;span class=&quot;badge bg-sm badge-top-left red&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;  
+    </code>
+</pre>
+                    <div id="badge-on-icon">
+                        <h2>Badge on icons</h2>
+                        <p class="mt-1">This is used to show notification count or cart. </p>
+                        <div class="demo-container gap-2">
+                           <div class="badge-wrapper">
+                                <i class="fa fa-shopping-cart fa-lg"></i>
+                                <span class="icon-badge flex-align-center">14</span>
+                            </div>    
+                            <div class="badge-wrapper">
+                                <i class="fa fa-envelope fa-lg"></i>        
+                                <span class="icon-badge flex-align-center">4</span>
+                            </div>    
+                            <div class="badge-wrapper">
+                                <i class=" fa fa-heart-o fa-lg"></i>
+                                <span class="icon-badge flex-align-center">4</span>
+                            </div>    
+                            <div class="badge-wrapper">
+                                <i class="fa fa-paper-plane fa-lg"></i>
+                                <span class="icon-badge flex-align-center">4</span>
+                            </div>    
+                        </div>       
+                    </div>   
+<pre>
+    <code class="language-html">
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;i class=&quot;fa fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;icon-badge flex-align-center&quot;&gt;14&lt;/span&gt;
+&lt;/div&gt;    
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;i class=&quot;fa fa-envelope fa-lg&quot;&gt;&lt;/i&gt;        
+    &lt;span class=&quot;icon-badge flex-align-center&quot;&gt;4&lt;/span&gt;
+&lt;/div&gt;    
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;i class=&quot; fa fa-heart-o fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;icon-badge flex-align-center&quot;&gt;4&lt;/span&gt;
+&lt;/div&gt;    
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;i class=&quot;fa fa-paper-plane fa-lg&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;icon-badge flex-align-center&quot;&gt;4&lt;/span&gt;
+&lt;/div&gt;            
+    </code>
+</pre>  
+                <div id="badge-on-button">
+                    <h2>Badge on Button</h2>
+                    <p class="mt-1">This is used to show notification count or cart. </p>
+                       <div class="demo-container gap-2 ">
+                            <div class="badge-wrapper">
+                                <button class="badge-btn primary-btn">Button</button>
+                                <span class="icon-badge flex-align-center">14</span>
+                            </div>    
+                            <div class="badge-wrapper">
+                                <button class="badge-btn btn-outline-primary">Button</button>
+                                <span class="icon-badge flex-align-center">14</span>
+                            </div>      
+                            <div class="badge-wrapper">
+                                <button class="badge-btn secondary-btn">Button</button>
+                                <span class="icon-badge flex-align-center">14</span>
+                            </div> 
+                            <div class="badge-wrapper">
+                                <button class="badge-btn tertiary-btn">Button</button>
+                                <span class="icon-badge flex-align-center">14</span>
+                            </div>       
+                       </div>      
+                </div>
+<pre>
+    <code class="language-html">
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;button class=&quot;badge-btn primary-btn&quot;&gt;Button&lt;/button&gt;
+    &lt;span class=&quot;icon-badge flex-align-center&quot;&gt;14&lt;/span&gt;
+&lt;/div&gt;    
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;button class=&quot;badge-btn yellow-btn&quot;&gt;Button&lt;/button&gt;
+    &lt;span class=&quot;icon-badge flex-align-center&quot;&gt;14&lt;/span&gt;
+&lt;/div&gt;      
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;button class=&quot;badge-btn secondary-btn&quot;&gt;Button&lt;/button&gt;
+    &lt;span class=&quot;icon-badge flex-align-center&quot;&gt;14&lt;/span&gt;
+&lt;/div&gt; 
+&lt;div class=&quot;badge-wrapper&quot;&gt;
+    &lt;button class=&quot;badge-btn tertiary-btn&quot;&gt;Button&lt;/button&gt;
+    &lt;span class=&quot;icon-badge flex-align-center&quot;&gt;14&lt;/span&gt;
+&lt;/div&gt;   
+    </code>
+</pre>
+        </section>                
+    </main>
+    <div class="right-sidebar">
+        <ul>
+            <li><h4>On this page</h4></li>
+            <li><a href="#badge-on-avatar">Badge on Avatar</a></li>
+            <li><a href="#different-position">Different position</a></li>
+            <li><a href="#badge-on-icon">Badge on icon</a></li>
+            <li><a href="#badge-on-button">Badge on button</a></li>
+        </ul>
+    </div>
+    </div>
+    <script src="/src/index.js"></script>
+    <script src="/src/prism/prism.js"></script>
+
+</body>
+</html>
+<body>
