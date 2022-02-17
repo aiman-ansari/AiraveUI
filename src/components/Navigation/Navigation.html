@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/components/component.css">
+    <title>Airave UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>     
+            <div class="logo-name">
+                <a href="/index.html">
+                    <span class="white-color-text">Airave</span>
+                    <span class="logo">UI</span>
+                </a>
+            </div>
+            <nav>                    
+                <ul class="nav-links">
+                    <a href="https://github.com/aiman-ansari"><li><i class="fa fa-github"></i></li></a>               
+                    <a href="https://www.linkedin.com/in/aiman-ansari-0054a01a7/"><li><i class="fa fa-linkedin"></i></li></a>
+                    <span class="toggle-theme">
+                        <li><i class="fa fa-moon-o" ></i></li>
+                    </span>   
+                </ul>
+            </nav>
+        </div>
+        <div class="left-sidebar pd-1">
+            <ul>
+                <li><h4>Getting started</h4></li>
+                <li>Installation</li>
+                <a href="/src/components/colors/color.html"><li>Colors</li></a>
+                <a href="/src/components/Text-utilities/Text-utilities.html"><li>Text Utilities</li></a>
+                <li><h4>Components</h4></li>
+                <li><a href="/src/components/alert/Alert.html">Alert</a></li>
+                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
+                <li><a href="/src/components/Badge/Badge.html">Badge</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
+                <li><a href="/src/components/Button/Button.html">Button</a></li>
+                <li><a href="/src/components/cards/card.html">Card</a></li>
+                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
+                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
+                <li><a href="/src/components/list/list.html">Lists</a></li>
+                <li><a href="/src/components/Navigation/Navigation.html" class="active">Navigation</a></li>
+            </ul>
+        </div>
+    <main>
+        <div class="container-section">
+            <h2>Navigation</h2>
+            <p class="mt-1 mb-1 bold-text">A navigation bar is a navigation header that is placed at the top of the page.</p> 
+            <hr>
+            <section>
+            <div id="navbar">
+                <h2 class="mt-1">Desktop Navbar</h2>
+                <p class="mt-1">To use navbar add <span class="purple-text">.nav</span> class and its other element to html.</p>
+                <div class="demo-container">
+                    <div class="nav">
+                        <div class="nav-brand">
+                        <div class="nav-logo">Logo</div> 
+                          <a href="#"><p class="brand">Brand</p></a>
+                        </div>
+                        <div class="searchbox">
+                        <input type="text" class="search-input">
+                        <i class="bi bi-search search-icon"></i>
+                            </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact </a></li>
+                            <li><a href="#">Features</a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <p class="mt-1">To use light theme navbar change your navbar classes to</p>
+                <p class="purple-text">nav-light </p>
+                <p class="purple-text">searchbox-light</p>
+                <p class="purple-text">search-icon-light</p>
+
+                <div class="demo-container">
+                    <div class="nav-light">
+                        <div class="nav-brand">
+                        <div class="nav-logo">Logo</div> 
+                          <a href="#"><p class="brand">Brand</p></a>
+                        </div>
+                        <div class="searchbox-light">
+                            <input type="text" placeholder="Search here"class="search-input"/>
+                            <i class="fa fa-search search-icon-light"></i>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact </a></li>
+                            <li><a href="#">Features</a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;div class=&quot;nav&quot;&gt;
+    &lt;div class=&quot;nav-brand&quot;&gt;
+        &lt;div class=&quot;nav-logo&quot;&gt;Logo&lt;/div&gt; 
+            &lt;a href=&quot;#&quot;&gt;&lt;p class=&quot;brand&quot;&gt;Brand&lt;/p&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;div class=&quot;searchbox&quot;&gt;
+       &lt;input type=&quot;text&quot; class=&quot;search-input&quot;&gt;
+        &lt;i class=&quot;bi bi-search search-icon&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact &lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;               
+      </code>
+                </pre>
+            </div>
+            <div id="navbar-with-icons">
+                <h2>Navbar with Iocns</h2>
+                <div class="demo-container">
+                    <div class="nav">
+                        <div class="nav-brand">
+                        <div class="nav-logo">Logo</div> 
+                          <a href="#"><p class="brand">Brand</p></a>
+                        </div>
+                        <div class="nav-search">
+                        <input type="text" class="search-box" placeholder="search here">
+                        <i class="bi bi-search search-icon"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#"><div class="badge-wrapper">
+                                    <i class="bi bi-cart fa-lg"></i>
+                                    <span class="icon-badge flex-align-center">14</span>
+                                </div></a>
+                            </li>
+                            <li><a href="#"><i class="bi bi-heart"></i></a></li>
+                            <li><a href="#"><i class="bi bi-person"></i></a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;div class=&quot;nav&quot;&gt;
+    &lt;div class=&quot;nav-brand&quot;&gt;
+        &lt;div class=&quot;nav-logo&quot;&gt;Logo&lt;/div&gt; 
+            &lt;a href=&quot;#&quot;&gt;&lt;p class=&quot;brand&quot;&gt;Brand&lt;/p&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;div class=&quot;nav-search&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;search-box&quot; placeholder=&quot;search here&quot;&gt;
+        &lt;i class=&quot;bi bi-search search-icon&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;div class=&quot;badge-wrapper&quot;&gt;
+            &lt;i class=&quot;bi bi-cart fa-lg&quot;&gt;&lt;/i&gt;
+            &lt;span class=&quot;icon-badge flex-align-center&quot;&gt;14&lt;/span&gt;
+            &lt;/div&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;bi bi-person&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;  
+                      </code>
+                </pre>
+                
+            </section>                
+    </main>
+    <div class="right-sidebar">
+        <ul>
+            <li><h4>On this page</h4></li>
+            <li><a href="#navbar">Desktop navbar</a></li>
+            <li><a href="#navbar-with-icons">Navbar with icons</a></li>
+        </ul>
+    </div>
+    </div>
+    <script src="/src/index.js"></script>
+    <script src="/src/prism/prism.js"></script>
+
+</body>
+</html>
