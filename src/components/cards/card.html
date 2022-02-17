@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/components/component.css">
+    <title>Airave UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>     
+            <div class="logo-name">
+                <a href="/index.html">
+                    <span class="white-color-text">Airave</span>
+                    <span class="logo">UI</span>
+                </a>
+            </div>
+            <nav>                    
+                <ul class="nav-links">
+                    <a href="https://github.com/aiman-ansari"><li><i class="fa fa-github"></i></li></a>               
+                    <a href="https://www.linkedin.com/in/aiman-ansari-0054a01a7/"><li><i class="fa fa-linkedin"></i></li></a>
+                    <span class="toggle-theme">
+                        <li><i class="fa fa-moon-o" ></i></li>
+                    </span>   
+                </ul>
+            </nav>
+        </div>
+        <div class="left-sidebar pd-1">
+            <ul>
+                <li><h4>Getting started</h4></li>
+                <li>Installation</li>
+                <a href="/src/components/colors/color.html"><li>Colors</li></a>
+                <a href="/src/components/Text-utilities/Text-utilities.html"><li>Text Utilities</li></a>
+                <li><h4>Components</h4></li>
+                <li><a href="/src/components/alert/Alert.html">Alert</a></li>
+                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
+                <li><a href="/src/components/Badge/Badge.html">Badge</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
+                <li><a href="/src/components/Button/Button.html">Button</a></li>
+                <li><a href="/src/components/cards/card.html" class="active">Card</a></li>
+                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
+                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
+                <li><a href="/src/components/list/list.html">Lists</a></li>
+                <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
+            </ul>
+        </div>
+    <main>
+        <div class="container-section">
+            <h2>Card</h2>
+            <p class="mt-1 mb-1 bold-text">A card is a flexible and extensible content container. It includes options for headers and footers.</p> 
+            <hr>
+            <section>
+            <div id="simple-card">
+                <h2 class="mt-1">Simple Card</h2>
+                <p class="mt-1"> Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various sizing</p>
+                <p>Here's example of simple card conataining image and body only.</p>
+                <p>You can use <span class="purple-text">.img-sm</span> and <span class="purple-text"> .card-title</span> inside <span class="purple-text"> .card</span> class.
+                <div class="demo-container flex-align-center gap-1 mb-1 flex-wrap">
+                    <div class="card box-shadow-bottom">
+                        <img class="img-sm" src="/src/assest/card-image.jpg" alt="card-image"/>
+                        <div class="card-title flex-align-center pd--5">Bag</div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;div class=&quot;card box-shadow-bottom&quot;&gt;
+    &lt;img class=&quot;img-sm&quot; src=&quot;/..&quot;/&gt;
+    &lt;div class=&quot;card-title flex-align-center pd--5&quot;&gt;Bag&lt;/div&gt;
+&lt;/div&gt;      
+                    </code>
+                </pre>
+            </div>
+            <div id="card-vertical">
+                <h2> Card</h2>
+                <div class="demo-container flex-align-center gap-1 mb-1 flex-wrap">
+                    <div class="card box-shadow-bottom">
+                        <img src="/src/assest/card-image.jpg" class="img-md"/>
+                        <div class="card-body">
+                            <div class="flex gap-3">
+                            <div class="card-title ">American Tourister</div>
+                            <i class="bi bi-heart wishlist"></i>
+                            </div>
+                            <div class="card-description">This is a new quality bag.</div>
+                            <div class="rating">    
+                                    <ul>
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            
+                                    </ul>
+                            </div>
+                            <div class="price">Rs 3000<del class="gray-text h6 ml-1">Rs. 4500</del><span class="text-accent h6"> (50% oFF)</span></div>
+                        </div>
+                    </div>
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;div class=&quot;card box-shadow-bottom&quot;&gt;
+    &lt;img src=&quot;/src/assest/card-image.jpg&quot; class=&quot;img-md&quot;/&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;flex gap-3&quot;&gt;
+            &lt;div class=&quot;card-title &quot;&gt;American Tourister&lt;/div&gt;
+                &lt;i class=&quot;bi bi-heart wishlist&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-description&quot;&gt;This is a new quality bag.&lt;/div&gt;
+        &lt;div class=&quot;rating&quot;&gt;    
+            &lt;ul&gt;
+                &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;price&quot;&gt;Rs 3000
+            &lt;del class=&quot;gray-text h6 ml-1&quot;&gt;Rs. 4500&lt;/del&gt;
+            &lt;span class=&quot;text-accent h6&quot;&gt; (50% oFF)&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt; 
+                   </code>
+                </pre>
+                <div id="card-badge">
+                    <h2> Card with Badge</h2>
+                    <div class="demo-container flex-align-center gap-1 mb-1 flex-wrap">
+                        <div class="card box-shadow">
+                            <div class="card-badge">
+                                <span>New Arrival</span>
+                            </div>
+                            <img src="/src/assest/card-image.jpg" class="img-md"/>
+                            <div class="card-body">
+                                <div class="card-title">American Tourister</div>
+                                <div class="card-description">This is a new quality bag.</div>
+                                <div class="rating">    
+                                        <ul>
+                                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                                <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                                
+                                        </ul>
+                                </div>
+                                <div class="price">Rs 3000<del class="gray-text h6 ml-1">Rs. 4500</del><span class="text-accent h6"> (50% oFF)</span></div>
+                            </div>
+                        </div>
+                    </div>  
+                    <pre>
+                        <code class="language-html">
+&lt;div class=&quot;card box-shadow&quot;&gt;
+    &lt;div class=&quot;card-badge&quot;&gt;
+        &lt;span&gt;New Arrival&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;/src/assest/card-image.jpg&quot; class=&quot;img-md&quot;/&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;div class=&quot;card-title&quot;&gt;American Tourister&lt;/div&gt;
+            &lt;div class=&quot;card-description&quot;&gt;This is a new quality bag.&lt;/div&gt;
+            &lt;div class=&quot;rating&quot;&gt;    
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;price&quot;&gt;Rs 3000&lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+
+                        </code>
+                    </pre>
+                <div id="card-dismiss">
+                    <h2>Card with dismiss</h2>
+                    <p class="mt-1">You can also dismiss your card by adding <span class="purple-text"> #dismiss </span> to your close icon.</p>
+                    <div class="demo-container">
+                        <div class="card" id="card-block">
+                            <i class="fa fa-times dismiss"></i>
+                            <img src="/src/assest/card-image.jpg" class="img-md" alt="card-image"/>
+                            <div class="card-body">
+                            <div class="card-title">American Tourister</div>
+                            <div class="card-description">This is a new quality bag.</div>
+                            <div class="rating">    
+                                    <ul >
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                            
+                                        </ul>
+                            </div>
+                            <div class="price">Rs. 1234</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <pre>
+                        <code class="language-html">
+&lt;div class=&quot;card&quot; id=&quot;card-block&quot;&gt;
+    &lt;i class=&quot;fa fa-times dismiss&quot;&gt;&lt;/i&gt;
+    &lt;img src=&quot;/src/assest/card-image.jpg&quot; class=&quot;card-img&quot; alt=&quot;card-image&quot;/&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+    &lt;div class=&quot;card-title&quot;&gt;American Tourister&lt;/div&gt;
+    &lt;div class=&quot;card-description&quot;&gt;This is a new quality bag.&lt;/div&gt;
+    &lt;div class=&quot;price&quot;&gt;Rs. 1234&lt;/div&gt;
+&lt;/div&gt;           
+                        </code>
+                    </pre>
+                <div id="horizontal-card">
+                    <h2>Horizontal Card</h2>
+                    <div class="demo-container ">
+                            <div class="card flex">
+                                <img class=" img-lg" src="/src/assest/card-image.jpg"/>
+                                <div class="flex-col card-body ml-1">
+                                    <div class="card-title text-xsm">American Tourister </div>
+                                    <div class="card-description mb-1">Americn tourister bag </div>
+                                    <div class="rating">
+                                         <ul >
+                                             <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                             <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                             <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                             <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                             <li><i class="bi bi-star-fill fa-lg"></i></li>
+                                         </ul>
+                                         </div>
+                                         <dic class="price h4">Rs.4000</dic>
+                                         <div class="card-title mt-1">Select Sizes</div>
+                                         <div class="sizes mt-1">
+                                             <ul >
+                                                 <li><button class="btn-sizes">40</button></li>
+                                                 <li><button class="btn-sizes">40</button></li>
+                                                 <li><button class="btn-sizes">40</button></li>
+                                                 <li><button class="btn-sizes">40</button></li>
+                                                 <li><button class="btn-sizes">40</button></li>
+                                             </ul>
+                                         </div>
+                                        <div class="flex gap-1 mt-2">
+                                            <button class="btn btn-primary">
+                                                <span>Add to cart</span>
+                                                <span class="btn-icon"><i class="fa fa-shopping-cart"></i></span>
+                                            </button>
+                                            <button class="btn btn-primary">
+                                                <span>Wishlist</span>
+                                                <span class="btn-icon"><i class="bi bi-heart"></i></span>
+                                            </button>   
+                                        </div>
+                                    </div> 
+                            </div>
+                        </div>
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;div class=&quot;card flex&quot;&gt;
+    &lt;div class=&quot;card flex&quot;&gt;
+        &lt;img class=&quot; img-lg&quot; src=&quot;/src/assest/card-image.jpg&quot;/&gt;
+        &lt;div class=&quot;flex-col card-body ml-1&quot;&gt;
+            &lt;div class=&quot;card-title text-xsm&quot;&gt;American Tourister &lt;/div&gt;
+            &lt;div class=&quot;card-description mb-1&quot;&gt;Americn tourister bag &lt;/div&gt;
+                &lt;div class=&quot;rating&quot;&gt;
+                    &lt;ul &gt;
+                        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill fa-lg&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;dic class=&quot;price h4&quot;&gt;Rs.4000&lt;/dic&gt;
+                &lt;div class=&quot;card-title mt-1&quot;&gt;Select Sizes&lt;/div&gt;
+                &lt;div class=&quot;sizes mt-1&quot;&gt;
+                    &lt;ul &gt;
+                        &lt;li&gt;&lt;button class=&quot;btn-sizes&quot;&gt;40&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button class=&quot;btn-sizes&quot;&gt;40&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button class=&quot;btn-sizes&quot;&gt;40&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button class=&quot;btn-sizes&quot;&gt;40&lt;/button&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;button class=&quot;btn-sizes&quot;&gt;40&lt;/button&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;flex gap-1 mt-2&quot;&gt;
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;
+                        &lt;span&gt;Add to cart&lt;/span&gt;
+                        &lt;span class=&quot;btn-icon&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;
+                        &lt;span&gt;Wishlist&lt;/span&gt;
+                        &lt;span class=&quot;btn-icon&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;/button&gt;   
+            &lt;/div&gt;
+        &lt;/div&gt; 
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <div id="text-overlay">
+                    <h2 class="mt-1">Card with text overlay</h2>
+                    <p class="mt-1">You can do text overlay on card. For center overlaying add
+                        <span class="purple-text"> .text-overlay </span> class and to overlay on entire card 
+                        <span class="purple-text"> .text-overlay-full</span>
+                    </p>
+                    <div class="demo-container gap-2">
+                        <div class="card">
+                            <img class="img-sm" src="/src/assest/card-image.jpg"/>
+                            <div class="text-overlay">Sold Out</div>
+                        </div>
+                        <div class="card">
+                            <img class="img-sm" src="/src/assest/card-image.jpg"/>
+                            <div class="text-overlay-full flex-align-center">Sold Out</div>
+                        </div>
+                        </div>
+                    </div>
+                    <pre>
+                        <code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+    &lt;img class=&quot;img-sm&quot; src=&quot;/src/assest/card-image.jpg&quot;/&gt;
+    &lt;div class=&quot;text-overlay&quot;&gt;Sold Out&lt;/div&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                    <div id="text-only">
+                        <h2 class="mt-1">Text only card</h2>
+                        <div class="demo-container">
+                            <div class="card w-300 box-shadow-bottom">
+                                <div class="card-body">
+                                    <div class="card-title mb-1 mt-1 text-sm">Card Title</div>
+                                    <div class="card-description">
+                                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <pre>
+                        <code class="language-html">
+&lt;div class=&quot;card-body&quot;&gt;
+    &lt;div class=&quot;card-title mb-1 mt-1 text-sm&quot;&gt;Card Title&lt;/div&gt;
+    &lt;div class=&quot;card-description&quot;&gt;
+        Lorem Ipsum is simply dummy text  
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                        
+                    <div id="card-shadow">
+                        <h2 class="mt-1">Card with shadow</h2>
+                            <div class="demo-container flex-align-center gap-1 mb-1 flex-wrap">
+                                <div class="card w-300 box-shadow">
+                                    <div class="card-body">
+                                        <div class="card-title mb-1 mt-1 text-sm">Card Title</div>
+                                        <div class="card-description">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <pre>
+                        <code class="language-html">
+&lt;div class=&quot;card w-300 box-shadow&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;card-title mb-1 mt-1 text-sm&quot;&gt;Card Title&lt;/div&gt;
+        &lt;div class=&quot;card-description&quot;&gt;
+            Lorem Ipsum is simply dummy text  
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+            </section>                
+    </main>
+    <div class="right-sidebar">
+        <ul>
+            <li><h4>On this page</h4></li>
+            <li><a href="#simple-card">Simple card</a></li>
+            <li><a href="#card-vertical">Card</a></li>
+            <li><a href="#card-badge">Card with badge</a></li>
+            <li><a href="#card-dismiss">Card with dismiss</a></li>
+            <li><a href="#horizontal-card">Horizontal Card</a></li>
+            <li><a href="#text-overlay">Card with text overlay</a></li>
+            <li><a href="#text-only">Card with text only</a></li>
+            <li><a href="#card-shadow">Card with shadow</a></li>
+
+        </ul>
+    </div>
+    </div>
+    <script src="/src/components/cards/card.js"></script>
+    <script src="/src/index.js"></script>
+    <script src="/src/prism/prism.js"></script>
+
+</body>
+</html>
