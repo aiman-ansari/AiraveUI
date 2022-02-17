@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/components/component.css">
+    <title>Airave UI | Rating</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>     
+            <div class="logo-name">
+                <a href="/index.html">
+                    <span class="white-color-text">Airave</span>
+                    <span class="logo">UI</span>
+                </a>
+            </div>
+            <nav>                    
+                <ul class="nav-links">
+                    <a href="https://github.com/aiman-ansari"><li><i class="fa fa-github"></i></li></a>               
+                    <a href="https://www.linkedin.com/in/aiman-ansari-0054a01a7/"><li><i class="fa fa-linkedin"></i></li></a>
+                    <span class="toggle-theme">
+                        <li><i class="fa fa-moon-o" ></i></li>
+                    </span>   
+                </ul>
+            </nav>
+        </div>
+        <div class="left-sidebar pd-1">
+            <ul>
+                <li><h4>Getting started</h4></li>
+                <li>Installation</li>
+                <a href="/src/components/colors/color.html"><li>Colors</li></a>
+                <a href="/src/components/Text-utilities/Text-utilities.html"><li>Text Utilities</li></a>
+                <li><h4>Components</h4></li>
+                <li><a href="/src/components/alert/Alert.html">Alert</a></li>
+                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
+                <li><a href="/src/components/Badge/Badge.html">Badge</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
+                <li><a href="/src/components/Button/Button.html">Button</a></li>
+                <li><a href="/src/components/cards/card.html">Card</a></li>
+                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
+                <li><a href="/src/components/Rating/Rating.html" class="active">Rating</a></li>
+                <li><a href="/src/components/list/list.html">Lists</a></li>
+                <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
+            </ul>
+        </div>
+    <main>
+        <div class="container-section">
+            <h2>Rating</h2>
+            <p class="mt-1 mb-1 bold-text">Rating is used to show user's feedback.</p> 
+        <hr>
+            <section>
+            <div id="star-rating">
+                <h2 class="mt-1">Star rating</h2>
+                <div class="demo-container">
+                    <div class="rating">    
+                    <ul >
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            
+                        </ul>
+                </div>
+                </div>
+<pre>
+    <code class="language-html">
+&lt;div class=&quot;rating&quot;&gt;    
+    &lt;ul&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;           
+    </code>
+                </pre>
+            </div>
+            <div id="half-filled">
+                <h2>Half filled rating</h2>
+                <div class="demo-container">
+                    <div class="rating">
+                    <ul >
+                        <li><i class="bi bi-star-fill"></i></li>
+                        <li><i class="bi bi-star-fill"></i></li>
+                        <li><i class="bi bi-star-fill"></i></li>
+                        <li><i class="bi bi-star-half"></i></li>
+                        <li><i class="bi bi-star"></i></li>
+                        
+                    </ul>       
+                    </div> 
+                </div>
+<pre>
+    <code class="language-html">
+&lt;div class=&quot;rating&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star-fill&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star-half&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i class=&quot;bi bi-star&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+    &lt;/ul&gt;       
+&lt;/div&gt; 
+    </code>
+</pre>                
+            </section>                
+    </main>
+    <div class="right-sidebar">
+        <ul>
+            <li><h4>On this page</h4></li>
+            <li><a href="#star-rating">Star rating</a></li>
+            <li><a href="#half-filled">half-filled</a></li>
+        </ul>
+    </div>
+    </div>
+    <script src="/src/index.js"></script>
+    <script src="/src/prism/prism.js"></script>
+
+</body>
+</html>

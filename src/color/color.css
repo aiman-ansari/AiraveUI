@@ -21,9 +21,9 @@
     --info-text-color:rgb(3, 3, 172);
     --warning-color:#fae29f;
     --warning-text-color:orange;
-    --btn-hover-primary:rgb(58, 116, 116);
-    --btn-hover-secondary:rgb(253, 237, 4);
-    --btn-hover-tertiary:rgb(255, 24, 63);
+    --btn-hover-primary:#267959;
+    --btn-hover-secondary:rgb(255, 24, 63);
+    --btn-hover-tertiary:rgb(253, 237, 4);
     --btn-hover-accent:orangered;
     --btn-gradient-pink-1:#eb3349;
     --btn-gradient-pink-2:#ff512f;
