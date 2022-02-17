@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/components/component.css">
+    <title>Airave UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>     
+            <div class="logo-name">
+                <a href="/index.html">
+                    <span class="white-color-text">Airave</span>
+                    <span class="logo">UI</span>
+                </a>
+            </div>
+            <nav>                    
+                <ul class="nav-links">
+                    <a href="https://github.com/aiman-ansari"><li><i class="fa fa-github"></i></li></a>               
+                    <a href="https://www.linkedin.com/in/aiman-ansari-0054a01a7/"><li><i class="fa fa-linkedin"></i></li></a>
+                    <span class="toggle-theme">
+                        <li><i class="fa fa-moon-o" ></i></li>
+                    </span>   
+                </ul>
+            </nav>
+        </div>
+        <div class="left-sidebar pd-1">
+            <ul>
+                <li><h4>Getting started</h4></li>
+                <li>Installation</li>
+                <a href="/src/components/colors/color.html"><li>Colors</li></a>
+                <a href="/src/components/Text-utilities/Text-utilities.html"><li>Text Utilities</li></a>
+                <li><h4>Components</h4></li>
+                <li><a href="/src/components/alert/Alert.html">Alert</a></li>
+                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
+                <li><a href="/src/components/Badge/Badge.html">Badge</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
+                <li><a href="/src/components/Button/Button.html" class="active">Button</a></li>
+                <li><a href="/src/components/cards/card.html">Card</a></li>
+                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
+                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
+                <li><a href="/src/components/list/list.html">Lists</a></li>
+                <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
+            </ul>
+        </div>
+    <main>
+        <div class="container-section">
+            <h2>Button</h2>
+            <p class="mt-1 mb-1 bold-text">Use these custom button styles for action in forms, dialogs and more.</p> 
+        <hr>
+            <section>
+            <div id="simple-button">
+                <h2 class="mt-1">Simple Button</h2>
+                <p class="mt-1">Customise your button by adding<span class="purple-text">.btn</span>class to button.</span>
+                    <br>There are 4 deffierent types of colors.<br>
+                    <span class="purple-text">btn-primary</span><br>
+                    <span class="purple-text">btn-secondary</span><br>
+                    <span class="purple-text">btn-tertiary</span><br>
+                    <span class="purple-text">btn-accent</span><br>
+
+                    <div class="demo-container flex-align-center gap-1 mb-1 flex-wrap">
+                       <button class="btn btn-primary">Button</button>
+                       <button class="btn btn-secondary">Button</button>
+                       <button class="btn btn-tertiary">Button</button>
+                       <button class="btn btn-accent">Button</button>
+                    </div>
+            </div>
+            <pre>
+                <code class="language-html">
+ &lt;button class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;
+ &lt;button class=&quot;btn btn-secondary&quot;&gt;Button&lt;/button&gt;
+ &lt;button class=&quot;btn btn-tertiary&quot;&gt;Button&lt;/button&gt;
+ &lt;button class=&quot;btn btn-accent&quot;&gt;Button&lt;/button&gt;
+                </code>
+            </pre>
+            <div id="round-button">
+                <h2>Round Button</h2>
+                <p class="mt-1">Customise your button by adding<span class="purple-text"> .btn-round </span>class to button.</span>
+                    <div class="demo-container gap-2">
+                       <button class="btn-round btn-primary">Button</button>
+                       <button class="btn-round btn-secondary">Button</button>
+                       <button class="btn-round btn-tertiary">Button</button>
+                       <button class="btn-round btn-accent">Button</button>
+                    </div>
+            </div>
+            <pre>
+                <code class="language-html">
+&lt;button class=&quot;btn-round btn-primary&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn-round btn-secondary&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn-round btn-tertiary&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn-round btn-accent&quot;&gt;Button&lt;/button&gt;
+                </code>
+            </pre>
+            <div id="outline-button">
+                <h2>Outline Button</h2>
+                    <p class="mt-1">To use this add <span class="purple-text">btn-outline</span> and color.</span></p>
+                    <div class="demo-container gap-2">
+                       <button class="btn btn-outline-primary">Button</button>
+                       <button class="btn btn-outline-secondary">Button</button>
+                       <button class="btn btn-outline-tertiary">Button</button>
+                       <button class="btn btn-outline-accent">Button</button>
+                    </div>
+            </div>
+            <pre>
+                <code class="language-html">
+&lt;button class=&quot;btn btn-outline-primary&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-secondary&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-tertiary&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-accent&quot;&gt;Button&lt;/button&gt;
+                </code>
+            </pre>
+            <div id="link-button">
+                <h2>Link Button</h2>
+                    <p class="mt-1">This button is use to link another web page. Add <span class="purple-text">btn-link to use it.</span> 
+                    <div class="demo-container gap-2">
+                        <a href="#"><button class="btn btn-primary">Button</button></a>
+                        <a href="#"><button class="btn-link">Button</button></a>
+                    </div>
+                </div>
+<pre>
+    <code class="language-html">
+&lt;a href=&quot;#&quot;&gt;&lt;button class=&quot;btn btn-primary&quot;&gt;Button&lt;/button&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot;&gt;&lt;button class=&quot;btn btn-link&quot;&gt;Button&lt;/button&gt;&lt;/a&gt;
+    </code>
+</pre>
+                <div id="icon-button">
+                    <h2>Icon Button</h2>
+                    <p class="mt-1">You can use button with icon as well by simply adding <span class="purple-text">btn-icon</span> to icon.
+                        <div class="demo-container gap-1">
+                            <button class="btn btn-primary">
+                                <span>Button</span>
+                                <span class="btn-icon"><i class="fa fa-shopping-cart"></i></span>
+                            </button>
+                            <button class="btn btn-outline-secondary ">
+                                <span>Button</span>
+                                <span class="btn-icon"><i class="bi bi-heart heart"></i></span>
+                                </button>
+                            <button class="btn btn-secondary">
+                                <span>Button</span>
+                                <span class="btn-icon"> <i class="fa fa-arrow-right"></i>
+                                </span>
+                            </button>
+                            <button class="btn btn-accent">
+                                <span>Button</span>
+                                <span class="btn-icon"> <i class="fa fa-trash"></i>
+                                </span>
+                            </button> 
+                        </div>
+                </div>
+<pre>
+    <code class="language-html">
+&lt;button class=&quot;btn btn-primary&quot;&gt;
+    &lt;span&gt;Button&lt;/span&gt;
+    &lt;span class=&quot;btn-icon&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary  &quot;&gt;
+    &lt;span&gt;Button&lt;/span&gt;
+    &lt;span class=&quot;btn-icon&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-tertiary &quot;&gt;
+    &lt;span&gt;Button&lt;/span&gt;
+    &lt;span class=&quot;btn-icon&quot;&gt; &lt;i class=&quot;fa fa-arrow-right&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-accent&quot;&gt;
+    &lt;span&gt;Button&lt;/span&gt;
+    &lt;span class=&quot;btn-icon&quot;&gt; &lt;i class=&quot;fa fa-trash&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+&lt;/button&gt; 
+    </code>
+</pre>
+                <div id="floating-action-button">
+                    <h2>Floating Action Button</h2>
+                    <p class="mt-1">To use this add <span class="purple-text">btn-floating-icon</span> to button.</p>
+                    <div class="demo-container">
+                        <button class="btn-floating-icon ml-6 btn-secondary box-shadow-bottom"><i class="fa fa-arrow-right "></i></button>
+                        <button class="btn-floating-icon mr-5 btn-light box-shadow"><i class="fa fa-plus icon-light"></i></button>
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;button class=&quot;btn-floating-icon btn-secondary box-shadow-bottom&quot;&gt;
+    &lt;i class=&quot;fa fa-arrow-right &quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn-floating-icon btn-light box-shadow&quot;&gt;
+    &lt;i class=&quot;fa fa-plus icon-light&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+                    </code>
+                </pre>
+                <div id="gradient-btn">
+                    <h2>Gradient Button</h2>
+                    <p class="mt-1">You can use gradient button by simply adding <span class="purple-text">btn-gradient-pink</span> for pink and orange combination</p>
+                    <p>and <spna class="purple-text">btn-gradient-blue</spna> for blue and teal color combination</p>
+                    <div class="demo-container gap-2">
+                        <button class="btn btn-gradient-pink">Button</button>
+                        <button class="btn btn-gradient-blue">Button</button>
+                    </div>
+                </div>
+<pre>
+    <code class="language-html">
+&lt;button class=&quot;btn btn-gradient-pink&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;btn btn-gradient-blue&quot;&gt;Button&lt;/button&gt;
+    </code>
+</pre>
+            </section>                
+    </main>
+    <div class="right-sidebar">
+        <ul>
+            <li><h4>On this page</h4></li>
+            <li><a href="#simple-button">Simple Button</a></li>
+            <li><a href="#round-button">Round Button</a></li>
+            <li><a href="#outline-button">Outline Button</a></li>
+            <li><a href="#link-button">Link Button</a></li>
+            <li><a href="#icon-button">Icon Button</a></li>
+            <li><a href="#floating-action-button">Floating Action Button</a></li>
+            <li><a href="#gradient-btn">Gradient Button</a></li>
+
+        </ul>
+    </div>
+    </div>
+    <script src="/src/index.js"></script>
+    <script src="/src/prism/prism.js"></script>
+
+</body>
+</html>
