@@ -1,6 +1,8 @@
+:root{
+    --body-color:rgb(41, 41, 41);
+}
 body{
-    color:rgb(41, 41, 41);
-    font-size:100%
+    color:var(--body-color);
 }
 .main-section{
     display: flex;
@@ -16,7 +18,7 @@ body{
 .content-description{
     grid-area: desc;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 900;
     padding: 2rem 1rem;
 }
 .bold-gray-text{
@@ -60,9 +62,6 @@ footer{
     width: 100%;
 }
  @media (max-width:480px){
-    body{
-        font-size: 63.5%;
-    }
     .navbar{
         width: 1fr;
     }
@@ -70,7 +69,6 @@ footer{
         margin-right: 0rem;
         height: 15rem;
         width:22rem
-
     }
     .main-section{
         margin: 1rem;
