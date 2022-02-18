@@ -58,8 +58,8 @@
     right: -10px;
     top: -10px;
     color: var(--white);
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +69,7 @@
     content: 'New arrival';
     background-color: var(--secondary-color);
     width: 140%;
-    height: 35px;
+    height: 2.1rem;
     position: absolute;
     display: flex;
     align-items: center;
