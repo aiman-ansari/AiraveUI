@@ -7,13 +7,13 @@ body{
 .main-section{
     display: flex;
     flex-direction: row;
-    margin: 5rem;
+    margin: 7rem;
     display: grid;
     grid-template-areas: 
     "desc image";
 }
-.nav{
-    position: relative;
+.navbar{
+    top:0;
 }
 .content-description{
     grid-area: desc;
@@ -58,7 +58,7 @@ footer{
     justify-content: center;
     background-color: var(--purple-color);
     color: var(--white);
-    position: relative;
+    position: absolute;
     width: 100%;
     bottom: 0;
 }
