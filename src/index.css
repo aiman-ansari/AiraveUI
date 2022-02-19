@@ -12,9 +12,6 @@ body{
     grid-template-areas: 
     "desc image";
 }
-.navbar{
-   position: fixed;
-}
 .content-description{
     grid-area: desc;
     font-size: 2.5rem;
