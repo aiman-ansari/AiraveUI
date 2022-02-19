@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/component.css">
+    <title>Airave UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-name">
+                <div class="menu-icon">
+                    <i class="fa fa-bars"></i>
+                </div>     
+                <div class="logo-name">
+                    <a href="/index.html">
+                        <span class="white-color-text">Airave</span>
+                        <span class="logo">UI</span>
+                    </a>
+                </div>
+            </div>
+            <nav>                    
+                <ul class="nav-links">
+                    <a href="https://github.com/aiman-ansari"><li><i class="fa fa-github"></i></li></a>               
+                    <a href="https://www.linkedin.com/in/aiman-ansari-0054a01a7/"><li><i class="fa fa-linkedin"></i></li></a>
+                    <span class="toggle-theme">
+                        <li><i class="fa fa-moon-o" ></i></li>
+                    </span>   
+                </ul>
+            </nav>
+        </div>
+        <div class="left-sidebar pd-1">
+            <ul>
+                <li><h4>Getting started</h4></li>
+                <li><a href="/src/components/Installation/Install.html">Installation</a></li>
+                <li><a href="/src/components/colors/color.html">Colors</a></li>
+                <li><a href="/src/components/Text-utilities/Text-utilities.html" class="active">Text Utilities</a></li>
+                <li><h4>Components</h4></li>
+                <li><a href="/src/components/alert/Alert.html">Alert</a></li>
+                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
+                <li><a href="/src/components/Badge/Badge.html">Badge</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
+                <li><a href="/src/components/Button/Button.html">Button</a></li>
+                <li><a href="/src/components/cards/card.html">Card</a></li>
+                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
+                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
+                <li><a href="/src/components/list/list.html">Lists</a></li>
+                <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
+            </ul>
+        </div>
+    <main>
+        <div class="container-section">
+            <h2>Text Utilities</h2>
+            <hr>
+        <section>
+            <div id="heading">
+                <h2>Heading</h2>
+                <p class="mt-1">You can customise your heading there are 6 headings start from <span class="purple-text">h1 </span>to <span class="purple-text"> .h6 </span></p>
+                    <div class="demo-container flex-col gap-1">
+                        <h1>This is H1 heading</h1>
+                        <h2>This is h2 heading</h2>
+                        <h3>This is h3 heading</h3>
+                        <h4>This is h4 heading</h4>
+                        <h5>This is h5 heading</h5>
+                        <h6>This is h6 heading</h6>
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;h1&gt;This is H1 text&lt;/h1&gt;
+&lt;h2&gt;This is h2 text&lt;/h2&gt;
+&lt;h3&gt;This is h3 text&lt;/h3&gt;
+&lt;h4&gt;This is h4 text&lt;/h4&gt;
+&lt;h5&gt;This is h5 text&lt;/h5&gt;
+&lt;h6&gt;This is h6 text&lt;/h6&gt;
+</code>     
+</pre>
+            </div>
+                <div id="typography">
+                    <h2>Typography</h2>
+                    <p class="mt-1"><span class="purple-text">.h1 </span>through <span class="purple-text"> .h6 </span>classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</p>
+                        <div class="demo-container  flex-col gap-1 mb-1 flex-wrap">
+                            <p class="h1"> H1 Paragraph text</p>
+                            <p class="h2"> H2 Paragraph text</p>
+                            <p class="h3"> H3 Paragraph text</p>
+                            <p class="h4"> H4 Paragraph text</p>
+                            <p class="h5"> H5 Paragraph text</p>
+                            <p class="h6"> H6 Paragraph text</p>
+                    </div>
+                <pre>
+                    <code class="language-html">
+&lt;p class=&quot;h1&quot;&gt; H1 Paragraph text&lt;/p&gt;
+&lt;p class=&quot;h2&quot;&gt; H2 Paragraph text&lt;/p&gt;
+&lt;p class=&quot;h3&quot;&gt; H3 Paragraph text&lt;/p&gt;
+&lt;p class=&quot;h4&quot;&gt; H4 Paragraph text&lt;/p&gt;
+&lt;p class=&quot;h5&quot;&gt; H5 Paragraph text&lt;/p&gt;
+&lt;p class=&quot;h6&quot;&gt; H6 Paragraph text&lt;/p&gt;
+                                     </code>
+                </pre>
+                <div id="gray-color-text">
+                    <h2>Gray Text</h2>
+                    <p class="mt-1">You can also use gray color in text by adding <span class="purple-text"> .gray-text </span>into html.
+                    <div class="demo-container flex-col flex-align-center mb-1 flex-wrap">
+                        <h3 class="gray-text mb-1">This is gray text.</h3>
+                        <h4 class="gray-text mb-1">This is gray text.</h4>
+                        <h5 class="gray-text mb-1">This is gray text.</h5>
+                    </div>
+                    <pre>
+                        <code class="language-html">
+&lt;h3 class=&quot;gray-text mb-1&quot;&gt;This is gray text.&lt;/h3&gt;
+&lt;h4 class=&quot;gray-text mb-1&quot;&gt;This is gray text.&lt;/h4&gt;
+&lt;h5 class=&quot;gray-text mb-1&quot;&gt;This is gray text.&lt;/h5&gt;                        </code>
+                    </pre>
+                <div id="Center">
+                    <h2>Center Text</h2>
+                    <p class="mt-1">Center your text by simply adding <span class="purple-text"> .flex-align-center </span></p>
+                    <div class="demo-container mb-1 ">
+                            <h2 class="flex-align-center">This is Center text</h2>
+                        
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;h2 class=&quot;flex-align-center&quot;&gt;This is Center text&lt;/h2&gt;
+                    </code>
+                </pre>
+            </section>                
+    </main>
+    <div class="right-sidebar">
+        <ul>
+            <li><h4>On this page</h4></li>
+            <li><a href="#heading">Heading</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#gray-color-text">Gray color Text</a></li>
+            <li><a href="#Center">Center</a></li>
+        </ul>
+    </div>
+    </div>
+    <script src="/src/index.js"></script>
+    <script src="/src/prism/prism.js"></script>
+
+</body>
+</html>

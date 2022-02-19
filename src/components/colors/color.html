@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/component.css">
+    <title>Airave UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-name">
+                <div class="menu-icon">
+                    <i class="fa fa-bars"></i>
+                </div>     
+                <div class="logo-name">
+                    <a href="/index.html">
+                        <span class="white-color-text">Airave</span>
+                        <span class="logo">UI</span>
+                    </a>
+                </div>
+            </div>
+            <nav>                    
+                <ul class="nav-links">
+                    <a href="https://github.com/aiman-ansari"><li><i class="fa fa-github"></i></li></a>               
+                    <a href="https://www.linkedin.com/in/aiman-ansari-0054a01a7/"><li><i class="fa fa-linkedin"></i></li></a>
+                    <span class="toggle-theme">
+                        <li><i class="fa fa-moon-o" ></i></li>
+                    </span>   
+                </ul>
+            </nav>
+        </div>
+        <div class="left-sidebar pd-1">
+            <ul>
+                <li><h4>Getting started</h4></li>
+                <li><a href="/src/components/Installation/Install.html">Installation</a></li>
+                <li><a href="/src/components/colors/color.html" class="active">Colors</a></li>
+                <li><a href="/src/components/Text-utilities/Text-utilities.html">Text Utilities</a></li>
+                <li><h4>Components</h4></li>
+                <li><a href="/src/components/alert/Alert.html">Alert</a></li>
+                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
+                <li><a href="/src/components/Badge/Badge.html">Badge</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
+                <li><a href="/src/components/Button/Button.html">Button</a></li>
+                <li><a href="/src/components/cards/card.html">Card</a></li>
+                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
+                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
+                <li><a href="/src/components/list/list.html">Lists</a></li>
+                <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
+            </ul>
+        </div>
+    <main>
+        <div class="container-section">
+            <div id="text-colors">
+                <h2>Colors</h2>
+                <p class="mt-1 mb-1">Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
+                <h2>Text colors</h2>
+                <div class="demo-container flex-align-center gap-1 mb-1 flex-wrap">
+                    <div>
+                        <ul>
+                            <li class="text-primary pd-1">This is Primary Text</li>
+                            <li class="text-secondary pd-1">This is Secondary Text</li>
+                            <li class="text-tertiary pd-1">This is Tertiary Text</li>
+                            <li class="text-accent pd-1">This is Accent Text</li>
+                            <li class="text-danger pd-1">This is Danger Text</li>
+                            <li class="text-info pd-1">This is Info Text</li>
+                            <li class="text-warning pd-1">This is Warning Text</li>
+                            <li class="text-success pd-1">This is Success text</li>
+                            <li class="text-dark pd-1">This is Success text</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <pre>
+                    <code class="language-html">
+&lt;ul&gt;
+    &lt;li class=&quot;text-primary &quot;&gt;This is Primary Text&lt;/li&gt;
+    &lt;li class=&quot;text-secondary &quot;&gt;This is Secondary Text&lt;/li&gt;
+    &lt;li class=&quot;text-tertiary &quot;&gt;This is Tertiary Text&lt;/li&gt;
+    &lt;li class=&quot;text-accent &quot;&gt;This is Accent Text&lt;/li&gt;
+    &lt;li class=&quot;text-danger &quot;&gt;This is Danger Text&lt;/li&gt;
+    &lt;li class=&quot;text-info &quot;&gt;This is Info Text&lt;/li&gt;
+    &lt;li class=&quot;text-warning &quot;&gt;This is Warning Text&lt;/li&gt;
+    &lt;li class=&quot;text-success &quot;&gt;This is Success text&lt;/li&gt;
+&lt;/ul&gt;          
+    </code>
+</pre>
+            
+            <div id="background-colors">
+                <h2>Background Colors</h2>
+                <div class="demo-container mb-1 ">
+                    <ul>
+                        <li class="bg-primary pd-1 white-text m-1">This is Primary Background</li>
+                        <li class="bg-secondary pd-1 white-text m-1">This is Secondary Background</li>
+                        <li class="bg-tertiary pd-1 white-text m-1">This is Tertiary Background</li>
+                        <li class="bg-accent pd-1 white-text m-1">This is Accent Background</li>
+                        <li class="bg-info pd-1 white-text m-1">This is Info Background</li>
+                        <li class="bg-warning pd-1 white-text m-1">This is Warning Background</li>
+                        <li class="bg-danger pd-1 white-text m-1">This is Warning Background</li>
+                        <li class="bg-success  pd-1 white-text m-1">This is Success Background</li>
+                        <li class="bg-light  pd-1 black m-1">This is light Background</li>
+                        <li class="bg-dark  pd-1 white-text m-1">This is dark Background</li>
+
+                    </ul>
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;ul&gt;
+    &lt;li class=&quot;bg-primary  white-text &quot;&gt;This is Primary Background&lt;/li&gt;
+    &lt;li class=&quot;bg-secondary  white-text &quot;&gt;This is Secondary Background&lt;/li&gt;
+    &lt;li class=&quot;bg-tertiary  white-text &quot;&gt;This is Tertiary Background&lt;/li&gt;
+    &lt;li class=&quot;bg-accent  white-text &quot;&gt;This is Accent Background&lt;/li&gt;
+    &lt;li class=&quot;bg-info  white-text &quot;&gt;This is Info Background&lt;/li&gt;
+    &lt;li class=&quot;bg-warning  white-text &quot;&gt;This is Warning Background&lt;/li&gt;
+    &lt;li class=&quot;bg-danger  white-text &quot;&gt;This is Warning Background&lt;/li&gt;
+    &lt;li class=&quot;bg-success   white-text &quot;&gt;This is Success Background&lt;/li&gt;
+&lt;/ul&gt;       
+             </code>
+                </pre>
+               
+            </section>                
+    </main>
+    <div class="right-sidebar">
+        <ul>
+            <li><h4>On this page</h4></li>
+            <li><a href="#text-colors">Text Colors</a></li>
+            <li><a href="#background-colors">Background Colors</a></li>
+        </ul>
+    </div>
+    </div>
+    <script src="/src/index.js"></script>
+    <script src="/src/prism/prism.js"></script>
+
+</body>
+</html>

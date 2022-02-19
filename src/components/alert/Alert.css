@@ -30,8 +30,8 @@
 }
 .bold-text{
     font-weight:500;
-    margin-left:0.3rem;
-    margin-right:0.5rem;
+    margin-left:5px;
+    margin-right:5px;
 }
 
 .alert-danger-border{
