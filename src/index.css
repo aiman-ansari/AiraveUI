@@ -12,6 +12,9 @@ body{
     grid-template-areas: 
     "desc image";
 }
+.nav{
+    position: relative;
+}
 .content-description{
     grid-area: desc;
     font-size: 2.5rem;
