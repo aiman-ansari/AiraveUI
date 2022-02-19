@@ -60,6 +60,7 @@ footer{
     color: var(--white);
     position: relative;
     width: 100%;
+    bottom: 0;
 }
  @media (max-width:480px){
     .navbar{
