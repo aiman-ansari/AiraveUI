@@ -16,7 +16,7 @@ input{
     background:none;
     color:var(--gray-text);
     font-size:1rem;
-    margin: 10px 0px;
+    margin: 8px 0px;
 }
 .input{
     padding:0.6rem 1rem;
