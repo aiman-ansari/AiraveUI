@@ -21,6 +21,10 @@
 .btn-icon-round{
     border-radius: 100%;
     border: none;
+    background-color: var(--light-gray-2);
+}
+.btn-icon-round:hover{
+    background-color: var(--light-gray-1);
 }
 .btn-icon-sm{
     height: 2rem;
