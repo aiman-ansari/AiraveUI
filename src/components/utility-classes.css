@@ -7,8 +7,8 @@
     --text-xl:6rem;
     --text-lg:4rem;
     --text-md:2rem;
-    --text-sm:1.5rem;
-    --text-xsm:1rem;
+    --text-sm:1.2rem;
+    --text-xsm:0.8rem;
     --dark-gray-text:rgb(92, 91, 91);
 }
 .text-xl{
@@ -213,6 +213,14 @@
     display:flex;
     gap:3rem;
 }
+.gap-4{
+    display:flex;
+    gap:4rem;
+}
+.gap-5{
+    display:flex;
+    gap:5rem;
+}
 .width-100{
     width: 100%;
 }
@@ -248,4 +256,10 @@
 }
 .h-100vh{
     height: 100vh;
+}
+.b-800{
+    font-weight: 800;
+}
+.b-600{
+    font-weight: 600;
 }

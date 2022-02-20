@@ -3,9 +3,7 @@
     --demo-container:#fffefb;
     --demo-container-shadow:rgba(219,219,219,1);
 }
-.bold-text{
-    font-weight: bold;
-}
+
 
 .purple-text{
     color:var(--secondary-color);
