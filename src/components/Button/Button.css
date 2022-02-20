@@ -101,17 +101,31 @@
     background-color:var(--accent-color);
     color:var(--white);
 }
-.btn-link{
-    color:var(--accent-color);
+.btn-link-primary,.btn-link-gray,.btn-link-accent{
     background-color: var(--white);
     padding: 2px;
     border: none;
     font-size: 1rem;
 }
-.btn-link:hover{
+.btn-link-accent{
+    color: var(--accent-color);
+}
+.btn-link-primary{
+    color: var(--primary-color);
+}
+.btn-link-gray{
+    color: var(--gray-color);
+}
+.btn-link-accent:hover{
     border-bottom: 2px solid var(--accent-color);
     transform: translate(2);
     color:var(--accent-color)
+}
+
+.btn-link-primary:hover{
+    border-bottom: 2px solid var(--primary-color);
+    transform: translate(2);
+    color:var(--primary-color)
 }
 .btn-floating-icon{
     height:3rem;
