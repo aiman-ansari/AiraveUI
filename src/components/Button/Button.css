@@ -18,6 +18,18 @@
 .btn-icon{
     border-radius: 50%;
 }
+.btn-icon-round{
+    border-radius: 100%;
+    border: none;
+}
+.btn-icon-sm{
+    height: 2rem;
+    width: 2rem;
+}
+.btn-icon-lg{
+    height: 3rem;
+    width: 3rem;
+}
 .heart{
     color: var(--secondary-color);
 }
