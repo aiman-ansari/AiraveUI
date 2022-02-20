@@ -10,33 +10,33 @@
 .img-xxl{
     height: 30rem;
     width: 30rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 .img-xl{
     height: 25rem;
     width: 25rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 .img-lg{
     height: 20rem;
     width: 20rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 .img-md{
     height: 15rem;
     width: 15rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 .img-sm{
     height: 12rem;
     width: 12rem;
-    object-fit: cover;
+    object-fit: contain;
 
 }
 .img-xsm{
     height: 5rem;
     width: 5rem;
-    object-fit: cover;
+    object-fit: contain;
 
 }
 .card-body{
