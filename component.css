@@ -14,6 +14,7 @@
 @import url(/src/CSS/index.css);
 @import url(/src/components/index.css);
 @import url(/src/color/color.css);
+@import url(/src/components/Grid/grid.css);
 @import url(/src/index.css);
 @import url(/src/components/utility-classes.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
