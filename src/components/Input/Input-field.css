@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 input{
-    border:2px solid var(--gray);
+    border:1.5px solid var(--gray);
     outline:none;
     transition: 0.5s;
     background:none;
@@ -26,23 +26,20 @@ input{
     display: flex;
     padding:1px 1rem ;
     align-items: center;
-    border: 2px solid var(--primary-color);
     border-radius: 3rem;
 }
 .icon-input,.search-input{
     border: none;
     padding: 0px 12px;
 }
-.checkbox{
-    height: 1rem;
-}
+
 .input-icon{
-    color: var(--black);
+    color: var(--dark-gray);
 }
 .input-with-icons{
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--dark-gray);
     margin-bottom: 1.5rem;
-    border-radius: 2rem;
+    border-radius: 8px;
 }
 .input-with-icons-secondary{
     border: none;
