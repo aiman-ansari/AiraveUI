@@ -106,6 +106,7 @@
     padding: 2px;
     border: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 .btn-link-accent{
     color: var(--accent-color);
