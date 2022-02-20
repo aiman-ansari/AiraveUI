@@ -1,5 +1,5 @@
 
-.nav-light,.nav{
+.nav-light,nav{
     height: 4rem;
     width: 100%;
     background-color: var(--dark-color);
@@ -9,16 +9,16 @@
     color:var(--white);
 }
 
-.nav ul a{
+nav ul a{
     color:var(--white);
     font-size: 0.9rem;
     cursor: pointer;
 }
-.nav ul,.nav-light ul{
+nav ul,.nav-light ul{
     display: flex;
     justify-content: flex-end;
 }
-.nav ul li,.nav-light ul li{
+nav ul li,.nav-light ul li{
     list-style: none;
     padding: 0px 10px;
 }

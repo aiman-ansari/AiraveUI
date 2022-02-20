@@ -24,7 +24,7 @@
     background-color: var(--light-gray-2);
 }
 .btn-icon-round:hover{
-    background-color: var(--light-gray-1);
+    background-color: var(--light-gray-3);
 }
 .btn-icon-sm{
     height: 2rem;
