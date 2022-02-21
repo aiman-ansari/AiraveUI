@@ -22,13 +22,10 @@ nav ul li,.nav-light ul li{
     list-style: none;
     padding: 0px 10px;
 }
-.nav-logo{
-    padding: 0px 10px;
-    left: 0%;
-    right: auto;
-}
+
 .nav-brand{
     display: flex;
+    padding: 0px 10px;
     justify-content: flex-start;
     margin-right: auto;
     left: 0%;
