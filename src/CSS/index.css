@@ -119,31 +119,6 @@ footer{
     grid-area: footer;
 }
 
-/* dark theme */
-.dark-mode{
-    background: var(--dark-mode);
-}
-.dark-mode h1,.dark-mode h2{
-    color:var(--dark-mode-h1-h2);
-}
-.dark-mode p,.dark-mode a,.dark-mode h3,.dark-mode h4{
-    color:var(--white)
-}
-.dark-mode .left-sidebar li:hover{
-    background-color: var(--dark-mode-li-hover)
-}
-.dark-mode .left-sidebar .active{
-    color:var(--dark-mode-active);
-}
-.dark-mode .left-sidebar ul{
-    background-color: var(--dark-mode-sidebar)
-}
-.dark-mode .left-sidebar{
-    background:var(--dark-mode-sidebar)
-}
-.dark-mode .demo-container{
-    background:var(--dark-mode-container)
-}
  @media (min-width:640px) and (max-width:768px) {
     .right-sidebar{
         display: none;
