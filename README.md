@@ -4,7 +4,7 @@ You can use its css design and functionality by simply adding below link into he
 <link rel="stylesheet" href="https://airave-ui.netlify.app/component.css">
 List of Components
 <ul>
-<li><a href="/src/components/alert/Alert.html">Alert</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/alert/alert">Alert</a></li>
                 <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
                 <li><a href="/src/components/Badge/Badge.html" class="active">Badge</a></li>
                 <li><a href="/src/components/Image/Image.html">Image</a></li>
