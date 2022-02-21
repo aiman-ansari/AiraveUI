@@ -126,6 +126,8 @@
 }
 .wishlist{
     color: var(--dark-gray-text);
+    display: flex;
+    justify-content: flex-end;
 }
 
  .text-overlay{
