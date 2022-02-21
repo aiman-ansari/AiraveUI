@@ -1,7 +1,11 @@
 # AiraveUI
 AiraveUI is simple, easy ,light weight and faster component library.
 You can use its css design and functionality by simply adding below link into header of your html page.
+<pre>
+<code class="language-html">
 <link rel="stylesheet" href="https://airave-ui.netlify.app/component.css">
+</code>
+</pre>
 List of Components
 <ul>
 <li><a href="https://airave-ui.netlify.app/src/components/alert/alert">Alert</a></li>
