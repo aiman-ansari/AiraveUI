@@ -5,13 +5,13 @@ You can use its css design and functionality by simply adding below link into he
 List of Components
 <ul>
 <li><a href="https://airave-ui.netlify.app/src/components/alert/alert">Alert</a></li>
-                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
-                <li><a href="/src/components/Badge/Badge.html" class="active">Badge</a></li>
-                <li><a href="/src/components/Image/Image.html">Image</a></li>
-                <li><a href="/src/components/Button/Button.html">Button</a></li>
-                <li><a href="/src/components/cards/card.html">Card</a></li>
-                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
-                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
-                <li><a href="/src/components/list/list.html">Lists</a></li>
-                <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
-                <li><a href="/src/components/Grid/Grid.html">Grid</a></li></ul>
+<li><a href="https://airave-ui.netlify.app/src/components/avatar/avatar">Avatar</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/badge/badge">Badge</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/image/image">Image</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/button/button">Button</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/cards/card.html">Card</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/input/input-field">Input Field</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/rating/rating">Rating</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/list/list.html">Lists</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/navigation/navigation">Navigation</a></li>
+<li><a href="https://airave-ui.netlify.app/src/components/grid/grid">Grid</a></li></ul>
