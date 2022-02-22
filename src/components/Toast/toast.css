@@ -1,0 +1,16 @@
+.toast-container-top,
+.toast-container-bottom,
+.toast-dismiss{
+    padding:1rem 1rem;
+    color: var(--light-gray-2);
+    font-size: 0.9rem;
+    display: none;
+    z-index:1;
+    position: fixed;
+}
+.toast-dismiss{
+    top: 5rem;
+}
+#dismiss{
+    padding-left: 2rem;
+}
