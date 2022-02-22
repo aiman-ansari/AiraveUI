@@ -37,5 +37,25 @@
     grid-template-rows: 1fr;
     grid-template-areas: 
     "grid-item-1 grid-item-2 grid-item-3 grid-item-4";
-
+}
+@media (max-width:480px){
+    .grid-two-items{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "grid-item-1"
+        "grid-item-2";
+    }
+    .grid-three-items{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "grid-item-1"
+        "grid-item-2"
+        "grid-item-3";
+    }
+    .grid-four-items{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "grid-item-1 grid-item-2"
+        "grid-item-3 grid-item-4";
+    }
 }

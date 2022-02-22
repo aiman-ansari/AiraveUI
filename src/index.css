@@ -24,6 +24,7 @@ body{
 .bold-gray-text{
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: var(--body-color);
 }
 .bold-purple-text{
     color:var(--purple-color)
@@ -63,10 +64,12 @@ footer{
 }
  @media (max-width:480px){
     .navbar{
-        width: 1fr;
+        width: 100%;
     }
     .image{
-        margin-right: 0rem;
+        right: 0;
+        /* top: 15rem; */
+        margin-top:5rem;
         height: 15rem;
         width:22rem
     }

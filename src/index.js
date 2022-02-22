@@ -42,6 +42,7 @@ menu.addEventListener('click',()=>{
         leftSidebar.style.display ="flex";
         leftSidebar.style.flexDirection = 'column';
         leftSidebar.style.alignItems = 'center';
+        leftSidebar.style.zIndex= '1'
     }
     else{
         icon.classList.replace('fa-times','fa-bars');
