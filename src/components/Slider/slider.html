@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/component.css">
-    <title>Airave UI|Image</title>
+    <title>Airave UI | Slider</title>
 </head>
 <body>
     <div class="container">
@@ -40,60 +40,75 @@
                 <li><a href="/src/components/alert/Alert.html">Alert</a></li>
                 <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
                 <li><a href="/src/components/Badge/Badge.html">Badge</a></li>
-                <li><a href="/src/components/Image/Image.html" class="active">Image</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
                 <li><a href="/src/components/Button/Button.html">Button</a></li>
                 <li><a href="/src/components/cards/card.html">Card</a></li>
                 <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
-                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
+                <li><a href="/src/components/Rating/Rating.html" class="active">Rating</a></li>
                 <li><a href="/src/components/list/list.html">Lists</a></li>
                 <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
                 <li><a href="/src/components/Grid/Grid.html">Grid</a></li>
-                <li><a href="/src/components/Slider/slider.html">Slider</a></li>
+                <li><a href="/src/components/Slider/slider.html" class="active">Slider</a></li>
 
             </ul>
         </div>
     <main>
         <div class="container-section">
-            <h2>Image</h2>
-            <p class="mt-1 mb-1 bold-text">Image can be customized and can be responsive to fit the parent's width</p> 
-            <hr>    
-            <div id="responsive-image">
-                    <h2 class="mt-1">Responsive Image</h2>
-                        <p class="mt-1">Responsive images will automatically adjust to fit the size of the screen.</p>
-                        Resize the browser window to see the responsive effect.
-                    <div class="demo-container">
-                            <img class="responsive-img" src="/src/assest/image-1.jpg"/>
-                    </div> 
+            <h2>Slider</h2>
+            <p class="mt-1 mb-1 bold-text">Sliders are important to set range of the value .</p> 
+        <hr>
+            <section>
+            <div id="slider">
+                <h2 class="mt-1">Range Slider</h2>
+                <div class="mt-2 mb-2">
+                    <div class="flex justify-space-between">
+                        <span>10</span>
+                        <span>100</span>
+                    </div>
+                    <input type="range" min="1" max="100" value="50" id="volumeRange">
+                    <span>Volume: </span><span id="range" class="text-gray text-xsm"></span>
                 </div>
+<pre>
+    <code class="language-html">
+&lt;div class=&quot;flex justify-space-between&quot;&gt;
+    &lt;span&gt;10&lt;/span&gt;
+    &lt;span&gt;100&lt;/span&gt;
+&lt;/div&gt;
+&lt;input type=&quot;range&quot; 
+min=&quot;1&quot;
+max=&quot;100&quot; 
+value=&quot;50&quot;
+id=&quot;volumeRange&quot;&gt;
+&lt;span&gt;Volume: &lt;/span&gt;
+&lt;span id=&quot;range&quot;
+ class=&quot;text-gray text-xsm&quot;&gt;&lt;/span&gt;
+    </code>
+                </pre>
                 <pre>
-                    <code class="language-html">
-&lt;img class=&quot;responsive-img&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
+                    <code class="language-javascript">
+//javascript
+var slider = document.querySelector("#volumeRange");
+var output = document.querySelector("#range");
+output.innerHTML = slider.value;
+slider.oninput = function printPrice() {
+  output.innerHTML = this.value;
+}
                     </code>
                 </pre>
-                <div id="round-image">
-                    <h2>Round Image</h2>
-                    <p class="mt-1">You can create round image using class<span class="purple-text">round-img</span></p>          
-                        <div class="demo-container">
-                                <img class="responsive-img round-img" src="/src/assest/image-2.jpg"/>
-                        </div>  
-                </div>  
-                <pre>
-                    <code class="language-html">
-&lt;img class=&quot;responsive-img round-img&quot; src=&quot;/src/assest/avatar-1.jpg&quot;/&gt;
-                    </code>
-                </pre>
+            </div>
+           
+            </section>                
     </main>
     <div class="right-sidebar">
         <ul>
             <li><h5>On this page</h5></li>
-            <li><a href="#responsive-image">Responsive Image</a></li>
-            <li><a href="#round-image">Round image</a></li>
+            <li><a href="#slider">Slider</a></li>
         </ul>
     </div>
     </div>
     <script src="/src/index.js"></script>
     <script src="/src/prism/prism.js"></script>
+    <script src="/src/components/Slider/slider.js"></script>
 
 </body>
 </html>
-<body>
