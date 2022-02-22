@@ -1,0 +1,49 @@
+/* dark theme */
+.dark-mode{
+    background: var(--dark-mode);
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6{
+    color:var(--dark-mode-h1-h2);
+}
+.dark-mode p,.dark-mode a{
+    color:var(--light-gray-1)
+}
+.dark-mode li h5{
+    color: var(--light-gray-2);
+}
+.dark-mode .left-sidebar li:hover{
+    background-color: var(--dark-mode-li-hover)
+}
+.dark-mode .left-sidebar .active{
+    color:var(--dark-mode-active);
+}
+.dark-mode .left-sidebar ul{
+    background-color: var(--dark-mode-sidebar)
+}
+.dark-mode .left-sidebar{
+    background:var(--dark-mode-sidebar);
+}
+.dark-mode .demo-container{
+    background:var(--dark-mode-container)
+}
+.dark-mode .card-title,
+.dark-mode .price{
+    color: var(--dark-mode-p);
+}
+.dark-mode .card-description{
+ color: var(--dark-mode-text);
+}
+.dark-mode .btn-link-primary,
+.dark-mode .btn-link-accent,
+.dark-mode .btn-link-gray,
+.dark-mode .btn-outline-primary,
+.dark-mode .btn-outline-secondary,
+.dark-mode .btn-outline-tertiary,
+.dark-mode .btn-outline-accent{
+    background-color: var(--dark-mode-container);
+}

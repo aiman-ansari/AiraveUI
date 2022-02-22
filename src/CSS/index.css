@@ -5,13 +5,14 @@
     box-sizing:border-box;
 }
 :root{
-    --dark-mode:rgb(27, 27, 27);
-    --dark-mode-h1-h2:rgb(94, 51, 84);
-    --dark-mode-li-hover:rgb(54, 54, 54);
-    --dark-mode-active:rgb(94, 51, 84);
-    --dark-mode-sidebar:rgb(32, 32, 32);
-    --dark-mode-container:rgb(36, 36, 36);
-    --sidebar:rgb(231, 231, 231);
+        --dark-mode:rgb(27, 27, 27);
+        --dark-mode-h1-h2:rgb(173, 100, 156);
+        --dark-mode-li-hover:rgb(54, 54, 54);
+        --dark-mode-active:rgb(119, 65, 107);
+        --dark-mode-sidebar:rgb(32, 32, 32);
+        --dark-mode-container:rgb(36, 36, 36);
+        --dark-mode-p:rgb(223, 223, 223);
+        --dark-mode-text:rgb(145, 145, 145);
 }
 
 body{
@@ -131,7 +132,7 @@ footer{
     "footer footer";  
     }
     main{
-        margin-left:  3rem;
+        margin:  2rem;
     }
 }
 @media (max-width:480px){
@@ -153,10 +154,13 @@ footer{
     main{
         width: 100vw;
         margin: 0;
-        padding: 0rem;
+        padding: 10px;
     }
     .navbar{
-        padding:1rem 1rem;
-
+        padding:1rem 0.5rem;
+    }
+    .navbar ul li{
+        justify-content: space-between;
+        padding: 0px 5px;
     }
 }
