@@ -31,4 +31,4 @@ Tech Stack
 https://github.com/aiman-ansari/AiraveUI/tree/dev
 
 <b>Website Link</b>
-airave-ui.netlify.app/
+https://airave-ui.netlify.app/
