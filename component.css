@@ -15,6 +15,7 @@
 @import url(/src/components/index.css);
 @import url(/src/color/color.css);
 @import url(/src/components/Grid/grid.css);
+@import url(/src/components/Toast/toast.css);
 @import url(/src/index.css);
 @import url(/src/components/dark-mode.css);
 @import url(/src/components/utility-classes.css);
