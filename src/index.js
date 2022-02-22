@@ -5,15 +5,15 @@ const leftSidebar =  document.querySelector('.left-sidebar');
 const theme = document.querySelector('.toggle-theme');
 const darkTheme = document.querySelector('.fa-moon-o');
 var element = document.body;
-theme.addEventListener('click',()=>{
-   if(darkTheme.classList.contains('fa-moon-o')){
-        darkTheme.classList.replace('fa-moon-o','fa-sun-o');
-        element.classList.toggle("dark-mode");
-   }
-   else{darkTheme.classList.replace('fa-sun-o','fa-moon-o');
-   element.classList.toggle("dark-mode");}
+// theme.addEventListener('click',()=>{
+//    if(darkTheme.classList.contains('fa-moon-o')){
+//         darkTheme.classList.replace('fa-moon-o','fa-sun-o');
+//         element.classList.toggle("dark-mode");
+//    }
+//    else{darkTheme.classList.replace('fa-sun-o','fa-moon-o');
+//    element.classList.toggle("dark-mode");}
     
-})
+// })
 menu.addEventListener('click',()=>{
     if(icon.classList.contains('fa-bars')){
         icon.classList.replace('fa-bars','fa-times');
