@@ -32,4 +32,4 @@ Tech Stack
 <b>Documentation</b>
 https://github.com/aiman-ansari/AiraveUI
 <b>Website Link</b>
-https://airave-ui.netlify.app/
+https://airave-ui.netlify.app
