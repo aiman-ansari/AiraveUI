@@ -4,7 +4,9 @@ It is mobile responsive component library also having a dark and light mode.
 You can use its css design and functionality by simply adding below link into header of your html page.
 
 https://airave-ui.netlify.app/component.css
-
+    
+<link rel="stylesheet" href="https://airave-ui.netlify.app/component.css">
+                    
 
 <b>List of Components</b>
 <ul>
@@ -19,6 +21,7 @@ https://airave-ui.netlify.app/component.css
 <li><a href="https://airave-ui.netlify.app/src/components/list/list.html">Lists</a></li>
 <li><a href="https://airave-ui.netlify.app/src/components/navigation/navigation">Navigation</a></li>
 <li><a href="https://airave-ui.netlify.app/src/components/grid/grid">Grid</a></li></ul>
+<li><a href="https://airave-ui.netlify.app/src/components/slider/slider">Slider</a></li>
 
 Tech Stack
 <ul>
@@ -28,7 +31,6 @@ Tech Stack
 </ul>
 
 <b>Documentation</b>
-https://github.com/aiman-ansari/AiraveUI/tree/dev
-
+https://github.com/aiman-ansari/AiraveUI
 <b>Website Link</b>
 https://airave-ui.netlify.app/
