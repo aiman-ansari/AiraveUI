@@ -3,9 +3,8 @@ AiraveUI is simple, easy ,light weight and faster component library.
 It is mobile responsive component library also having a dark and light mode.
 You can use its css design and functionality by simply adding below link into header of your html page.
 
-https://airave-ui.netlify.app/component.css
     
-<link rel="stylesheet" href="https://airave-ui.netlify.app/component.css">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://airave-ui.netlify.app/component.css&quot;&gt;
                     
 
 <b>List of Components</b>
