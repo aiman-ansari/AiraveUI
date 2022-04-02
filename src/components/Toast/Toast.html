@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/component.css">
+    <title>Airave UI|Toast</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>     
+            <div class="logo-name">
+                <a href="/index.html">
+                    <span class="white-color-text">Airave</span>
+                    <span class="logo">UI</span>
+                </a>
+            </div>
+            <div class="nav">                    
+                <ul class="nav-links">
+                    <a href="https://github.com/aiman-ansari"><li><i class="fa fa-github"></i></li></a>               
+                    <a href="https://www.linkedin.com/in/aiman-ansari-0054a01a7/"><li><i class="fa fa-linkedin"></i></li></a>
+                    <a href="https://twitter.com/_aimanansari"><li><i class="fa fa-twitter"></i></li></a>
+                    <span class="toggle-theme">
+                        <li><i class="fa fa-moon-o" ></i></li>
+                    </span>   
+                </ul>
+            </div>
+        </div>
+        <div class="left-sidebar pd-1">
+            <ul>
+                <li><h5>Getting started</h5></li>
+                <li><a href="/src/components/Installation/Install.html">Installation</a></li>
+                <li><a href="/src/components/colors/color.html">Colors</a></li>
+                <li><a href="/src/components/Text-utilities/Text-utilities.html">Text Utilities</a></li>
+                <li><h5>Components</h5></li>
+                <li><a href="/src/components/alert/Alert.html">Alert</a></li>
+                <li><a href="/src/components/avatar/Avatar.html">Avatar</a></li>
+                <li><a href="/src/components/Badge/Badge.html">Badge</a></li>
+                <li><a href="/src/components/Image/Image.html">Image</a></li>
+                <li><a href="/src/components/Button/Button.html">Button</a></li>
+                <li><a href="/src/components/cards/card.html">Card</a></li>
+                <li><a href="/src/components/Input/Input-field.html">Input Field</a></li>
+                <li><a href="/src/components/Rating/Rating.html">Rating</a></li>
+                <li><a href="/src/components/list/list.html">Lists</a></li>
+                <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
+                <li><a href="/src/components/Grid/Grid.html">Grid</a></li>
+                <li><a href="/src/components/Slider/slider.html">Slider</a></li>
+                <li><a href="/src/components/Toast/Toast.html" class="active">Toast</a></li>
+                <li><a href="/src/components/Modal/Modal.html">Modal</a></li>
+
+            </ul>
+        </div>
+        <main>
+            <div class="container-section">
+                <h2>Toast</h2>
+                <p class="mt-1 mb-1 bold-text">Toast or snackbar is used to show popup notifications to user</p> 
+                <hr>
+            <section>
+                <div id="toast">
+                    <h2 class="mt-1">Simple Toast</h2>
+                    <p class="mt-1">This snackbar is automatically disappears after 3 seconds</p>
+                    <div class="demo-container">
+                        <button class="btn btn-primary m-1" id="toast-top-btn">Toast Top</button>
+                            <div class="toast-container-top bg-dark">
+                                This toast will automatically remove after 3 sec
+                        </div>
+                        <button class="btn btn-primary m-1" id="toast-bottom-btn">Toast Bottom</button>
+                            <div class="toast-container-bottom bg-accent">
+                                This toast will automatically remove after 3 sec
+                            </div>
+                    </div>
+                    <pre>
+                        <code class="language-html">
+    &lt;button class=&quot;btn btn-primary m-1&quot; id=&quot;toast-top-btn&quot;&gt;Toast Top&lt;/button&gt;
+        &lt;div class=&quot;toast-container-top bg-dark&quot;&gt;
+            This toast will automatically remove after 3 sec
+        &lt;/div&gt;
+    &lt;button class=&quot;btn btn-primary m-1&quot; id=&quot;toast-bottom-btn&quot;&gt;Toast Bottom&lt;/button&gt;
+        &lt;div class=&quot;toast-container-bottom bg-accent&quot;&gt;
+            This toast will automatically remove after 3 sec
+    &lt;/div&gt;      
+                 </code>
+                    </pre>
+                    <pre>
+                        <code class="language-javscript">
+    const toastTopBtn = document.querySelector('#toast-top-btn');
+    const toastTop= document.querySelector('.toast-container-top');
+    const toastBottom= document.querySelector('.toast-container-bottom');
+    const toastBottomBtn = document.querySelector('#toast-bottom-btn');
+    toastTopBtn.addEventListener('click',()=>{
+        toastTop.style.display = "flex";
+        toastTop.style.top = "5rem";
+        setTimeout(()=>{
+            toastTop.style.display ="none"
+        },3000)
+    })
+    toastBottomBtn.addEventListener('click',()=>{
+        toastBottom.style.display = "flex";
+        toastBottom.style.bottom = "1rem";
+        setTimeout(()=>{
+            toastBottom.style.display ="none"
+        },3000)
+    })
+                        </code>
+                    </pre>
+                </div>
+                <div id="toast-with-dismiss">
+                    <h2>Toast with dismiss</h2>
+                    <div class="demo-container">
+                        <button class="btn btn-primary" id="toast-dismiss-btn">Click</button>
+                        <div class="toast-dismiss bg-accent">
+                            <span>This is Toast</span>
+                            <i class="fa fa-times" id="dismiss"></i>
+                        </div>
+                    </div>
+                    <pre>
+                        <code class="language-html">
+    &lt;div class=&quot;toast-dismiss bg-accent&quot;&gt;
+    &lt;span&gt;This is Toast&lt;/span&gt;
+    &lt;i class=&quot;fa fa-times&quot; id=&quot;dismiss&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;       
+                 </code>
+                    </pre>
+                    <pre>
+                        <code class="language-javscript">
+    const toastBottomBtn = document.querySelector('#toast-bottom-btn');
+    const toastDismissBtn = document.querySelector('#toast-dismiss-btn');
+    const dismissBtn = document.querySelector('#dismiss');
+    toastDismissBtn.addEventListener('click',()=>{
+        toastDismiss.style.display = "flex";
+    })
+    dismissBtn.addEventListener('click',()=>{
+        toastDismiss.style.display = "none";
+    })
+                        </code>
+                    </pre>
+                </section>                
+        </main>
+        <div class="right-sidebar">
+            <ul>
+                <li><h5>On this page</h5></li>
+                <li><a href="#toast">Simple Toast</a></li>
+                <li><a href="#toast-with-dismiss">Toast with Dismiss</a></li>
+            </ul>
+        </div>
+        </div>
+        <script src="/src/index.js"></script>
+        <script src="/src/prism/prism.js"></script>
+        <script src="/src/components/Toast//Toast.js"></script>
+    </body>
+    </html> 
+     29 
