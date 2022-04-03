@@ -49,14 +49,13 @@
                 <li><a href="/src/components/Navigation/Navigation.html">Navigation</a></li>
                 <li><a href="/src/components/Grid/Grid.html">Grid</a></li>
                 <li><a href="/src/components/Slider/slider.html">Slider</a></li>
-                <li><a href="/src/components/Toast/Toast.html" class="active">Toast</a></li>
-                <li><a href="/src/components/Modal/Modal.html">Modal</a></li>
+                <li><a href="/src/components/Toast/Toast.html" class="active">Toast and Modal</a></li>
 
             </ul>
         </div>
         <main>
             <div class="container-section">
-                <h2>Toast</h2>
+                <h2>Toast and Modal</h2>
                 <p class="mt-1 mb-1 bold-text">Toast or snackbar is used to show popup notifications to user</p> 
                 <hr>
             <section>
@@ -138,6 +137,62 @@
     })
                         </code>
                     </pre>
+
+
+                    <div id="modal">
+                        <h2>Modal</h2>
+                        <p class="mt-1 mb-1 bold-text">Use JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p> 
+
+                        <div class="demo-container ">
+                            <div class="modal">
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+                                <div class="modal-action">
+                                    <a href="#">
+                                        <button class="btn btn-outline-primary">Action</button>
+                                    </a>
+                                    <button class="btn btn-primary" id="close">Cancel</button>
+                                </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" id="modalBtn">Click for modal</button>
+                        </div>
+                </div>
+                <pre>
+                    <code class="language-html">
+&lt;div class=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris 
+        &lt;/p&gt;
+        &lt;div class=&quot;modal-action&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;button class=&quot;btn btn-outline-primary&quot;&gt;Action&lt;/button&gt;
+            &lt;/a&gt;
+            &lt;button class=&quot;btn btn-primary&quot; id=&quot;close&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;button class=&quot;btn btn-primary&quot; id=&quot;modalBtn&quot;&gt;Click for modal&lt;/button&gt;
+                    </code>
+                </pre>
+                <pre>
+                    <code class="language-javascript">
+//javascript
+const modal = document.querySelector('.modal')
+const close = document.querySelector('#close');
+const modalBtn = document.querySelector('#modalBtn')
+close.addEventListener('click',()=>{
+    modal.style.display = "none"
+})
+
+modalBtn.addEventListener('click', ()=>{
+    modal.style.display = "flex"
+})
+                    </code>
+                </pre>
                 </section>                
         </main>
         <div class="right-sidebar">
@@ -145,6 +200,8 @@
                 <li><h5>On this page</h5></li>
                 <li><a href="#toast">Simple Toast</a></li>
                 <li><a href="#toast-with-dismiss">Toast with Dismiss</a></li>
+                <li><a href="#modal">Modal</a></li>
+
             </ul>
         </div>
         </div>

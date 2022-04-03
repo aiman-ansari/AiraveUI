@@ -1,3 +1,9 @@
+:root{
+    --modal-bg:rgba(0,0,0,0.5);
+}
+
+/* Toast Css */
+
 .toast-container-top,
 .toast-container-bottom,
 .toast-dismiss{
@@ -14,3 +20,40 @@
 #dismiss{
     padding-left: 2rem;
 } 
+
+
+/* Modal Css */
+
+.modal {
+    position: fixed;
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:var(--modal-bg) ;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .modal-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1rem;
+    background-color:var(--light-gray-2);
+    padding: 2rem;
+    color: var(--text-dark);
+    transform: translate(-50%,-50%);
+    
+  }
+  .modal-action{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    margin-top: 2rem;
+}
