@@ -21,6 +21,7 @@ You can use its css design and functionality by simply adding below link into he
 <li><a href="https://airave-ui.netlify.app/src/components/navigation/navigation">Navigation</a></li>
 <li><a href="https://airave-ui.netlify.app/src/components/grid/grid">Grid</a></li></ul>
 <li><a href="https://airave-ui.netlify.app/src/components/slider/slider">Slider</a></li>
+<li><a href="https://airaveui.netlify.app/src/components/toast/toast">Toast & Modal</a></li>
 
 Tech Stack
 <ul>
