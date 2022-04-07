@@ -16,6 +16,8 @@
 @import url(/src/color/color.css);
 @import url(/src/components/Grid/grid.css);
 @import url(/src/components/Slider/slider.css);
+@import url(/src/components/Toast/Toast.css);
+@import url(/src/components/Modal/Modal.css);
 @import url(/src/index.css);
 @import url(/src/components/dark-mode.css);
 @import url(/src/components/utility-classes.css);
